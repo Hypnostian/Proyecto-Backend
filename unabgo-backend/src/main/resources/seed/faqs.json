@@ -1,0 +1,350 @@
+[
+ {
+  "question": "¿Con cuánto se aprueba una materia?",
+  "keywords": "¿Cuál es la nota mínima para pasar?; nota mínima aprobatoria; ¿Con cuánto paso una materia?; ¿Con qué nota se gana una materia?",
+  "answer": "En la UNAB se aprueba con 3.0. Las notas van de 0.0 a 5.0 y una prueba que no presentes vale 0.0.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Las notas se redondean?",
+  "keywords": "¿Un 2.96 es 3.0?; ¿Redondean la nota final?; ¿Aproximan la nota?",
+  "answer": "No. La nota final se expresa en unidades y décimas sin aproximar: un 2.96 queda en 2.9 y no alcanza el 3.0.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Cuántas fallas puedo tener?",
+  "keywords": "¿Con cuántas fallas pierdo una materia?; porcentaje de inasistencia permitido; ¿Se pierde una materia por fallas?; ¿Cuántas faltas puedo tener?",
+  "answer": "Si al final del curso tienes 20 % o más de fallas sobre las horas exigidas, la nota del último registro queda en 0.0. En práctica clínica de Salud el límite es 10 %, y esta regla no aplica en programas virtuales.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Cómo funciona la habilitación?",
+  "keywords": "¿Qué es habilitar una materia?; ¿Puedo habilitar una materia?; ¿Con qué nota puedo habilitar?; ¿Cuántas materias puedo habilitar?",
+  "answer": "Puedes habilitar si tu nota final es 2.5 o más y el curso es habilitable (los teórico-prácticos, seminarios, talleres, prácticas, instrumentales y de Bienestar no se habilitan). Se habilita una vez por curso y máximo 2 cursos por periodo. La definitiva queda 60 % la nota del curso y 40 % la habilitación. La calculadora de la app te dice cuánto necesitas.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Qué es un supletorio?",
+  "keywords": "¿Cómo pido un supletorio?; Falté a un parcial, ¿qué hago?; No pude presentar el examen; ¿Cómo pido una supletoria?",
+  "answer": "El supletorio reemplaza una prueba que no presentaste con justa causa. Lo pides al director o coordinador de tu programa dentro de los 5 días hábiles siguientes a la fecha de la prueba, con el soporte (si es por salud, emitido por tu EPS). Se presenta una sola vez y tiene costo.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Qué es validar una materia?",
+  "keywords": "¿Cómo valido un curso?; ¿Qué requisitos hay para validar?; ¿Puedo validar una materia?",
+  "answer": "Validar es demostrar que dominas un curso sin cursarlo. Necesitas un PGA de 3.50 o más y no haberlo perdido antes. Son dos pruebas, oral y escrita, de 50 % cada una, y se aprueba con 4.0. Se pide por escrito al director o coordinador del programa.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Qué es el PPA?",
+  "keywords": "¿Qué es el PGA?; ¿Cómo se calcula el promedio?; ¿Cómo sacan el promedio del semestre?; ¿Cómo se calcula el promedio acumulado?",
+  "answer": "El PPA (promedio del periodo) y el PGA (promedio general acumulado) se calculan multiplicando la nota final de cada curso por sus créditos, sumando todo y dividiendo entre los créditos cursados. Se expresan con centésimas sin aproximar.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Qué pasa si mi promedio baja de 3.2?",
+  "keywords": "¿Qué es estar en condicional?; ¿Qué es la prueba académica?; ¿Qué pasa si tengo el promedio bajo?; ¿Qué pasa si mi PGA es menor a 3?",
+  "answer": "Con un PGA entre 3.00 y 3.20 quedas en estado condicional y entras al Programa de Acompañamiento y Apoyo Académico. Si te pasa por segunda vez seguida, o si tu PGA baja de 3.00, quedas en prueba académica: entras al Programa de Recuperación Académica y solo puedes matricular 2 de los cursos que perdiste.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Cuántos cortes hay?",
+  "keywords": "¿Cuánto vale cada corte?; ¿Qué porcentaje tienen los cortes?; ¿Cómo se reparten las notas del semestre?",
+  "answer": "Las notas se registran por cortes; lo usual en la UNAB son dos cortes. Cuánto vale cada prueba lo fija el profesor en la guía de cátedra, y cada registro debe tener al menos 2 pruebas. En la calculadora tu materia ya viene con 2 cortes del 50 % y puedes cambiarlos.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Cómo reclamo una nota?",
+  "keywords": "No estoy de acuerdo con mi nota; ¿Cómo pido revisión de una calificación?; ¿Qué es un segundo calificador?",
+  "answer": "Primero pides la revisión de inmediato al profesor del curso. Si sigues en desacuerdo, dentro de los 2 días hábiles siguientes a la entrega de la prueba calificada puedes pedir por escrito un segundo calificador al decano o director de departamento.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "Si repito una materia, ¿qué nota queda?",
+  "keywords": "¿Qué nota queda si repito un curso?; ¿Se borra la nota si repito?",
+  "answer": "Si pierdes un curso y lo repites, el sistema registra la nota más alta, en el periodo en que la obtuviste.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Cómo cancelo una materia?",
+  "keywords": "¿Puedo cancelar una materia?; ¿Cuándo puedo cancelar un curso?",
+  "answer": "La cancelación ordinaria la pides dentro de las fechas del cronograma académico de tu programa. La extraordinaria solo procede por fuerza mayor o caso fortuito comprobado, hasta el día hábil siguiente al fin de clases; no se acepta por bajo rendimiento ni por exceso de fallas.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Puedo estudiar dos carreras?",
+  "keywords": "¿Cómo hago doble programa?; requisitos para doble programa",
+  "answer": "Sí, puedes matricularte en dos programas a la vez si aprobaste al menos el 30 % de los créditos del primero, tienes un PGA de 3.50 o más y te admiten en el segundo.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Qué nivel de inglés piden?",
+  "keywords": "¿Cuál es el requisito de inglés?; ¿Necesito B2 para graduarme?",
+  "answer": "La competencia en inglés se cumple con nivel B2 en pregrado profesional y B1 en pregrado tecnológico, según el Marco Común Europeo. Puedes acreditarlo con la prueba de clasificación, una prueba de suficiencia o una certificación internacional aceptada por el Departamento de Lenguas.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Qué es cum laude?",
+  "keywords": "¿Con qué promedio me gradúo con honores?; ¿Qué es summa cum laude?",
+  "answer": "En pregrado profesional: Cum laude con PGA de 4.25 a 4.50, Magna cum laude de 4.51 a 4.75 y Summa cum laude con más de 4.75, siempre que estés en el percentil 95 de los graduados de tu programa de los últimos cinco años.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Qué es un crédito académico?",
+  "keywords": "¿Cuántas horas es un crédito?; ¿Para qué sirven los créditos?",
+  "answer": "Un crédito académico equivale a 48 horas de trabajo: clase con el profesor más trabajo independiente. Los créditos pesan en tu promedio.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Qué es TEMA?",
+  "keywords": "¿Dónde veo mis tareas?; ¿Dónde subo mis trabajos?; aulas virtuales de la UNAB",
+  "answer": "TEMA es la plataforma de aulas virtuales de la UNAB: ahí ves tus cursos, materiales, tareas y entregas, en https://tema.unab.edu.co/.",
+  "source_url": "https://unab.edu.co/"
+ },
+ {
+  "question": "¿Dónde veo mis notas?",
+  "keywords": "¿Qué es MiPortalU?; ¿Dónde veo mi horario oficial?; portal del estudiante",
+  "answer": "MiPortalU es el portal del estudiante para notas, horarios y trámites: https://miportalu.unab.edu.co/.",
+  "source_url": "https://unab.edu.co/"
+ },
+ {
+  "question": "¿Qué es COSMOS?",
+  "keywords": "¿Para qué sirve COSMOS?",
+  "answer": "COSMOS es otra plataforma académica de la UNAB: https://cosmos.unab.edu.co/.",
+  "source_url": "https://unab.edu.co/"
+ },
+ {
+  "question": "¿Cómo busco un libro en la biblioteca?",
+  "keywords": "catálogo de la biblioteca; ¿Dónde busco libros de la UNAB?",
+  "answer": "El catálogo de la Biblioteca UNAB está en https://catalogo.unab.edu.co/.",
+  "source_url": "https://unab.edu.co/"
+ },
+ {
+  "question": "¿Dónde hago trámites de matrícula?",
+  "keywords": "¿Qué es Punto U Digital?; ayuda con la matrícula; ¿Con quién hablo sobre mis créditos?",
+  "answer": "En Punto U Digital puedes adelantar gestiones con Registro y Control Académico, recibir asesoría de recaudo y apoyo financiero, y resolver dudas con tu programa sobre cursos, créditos y semestre.",
+  "source_url": "https://unab.edu.co/ayudamatricula/"
+ },
+ {
+  "question": "¿Cuál es el teléfono de la UNAB?",
+  "keywords": "¿Cómo contacto a la UNAB?; ¿Cuál es el correo de la UNAB?; número de la UNAB",
+  "answer": "Puedes comunicarte al PBX (607) 643 6111 / 643 6261, al centro de contacto 018000-931170 o escribir a contactenos@unab.edu.co.",
+  "source_url": "https://unab.edu.co/"
+ },
+ {
+  "question": "¿Cómo puedo financiar la matrícula?",
+  "keywords": "¿Qué planes de financiación hay?; ¿Puedo pagar la matrícula en cuotas?; financiación de la UNAB",
+  "answer": "La UNAB tiene planes propios: Flexi Corto Mensual (5 cuotas), Flexi Corto Bimestral (3 cuotas), Flexi30 Largo Plazo (30 % mientras estudias y 70 % al terminar), Plan Horizontes (hasta el 100 %, sin intereses, con cupos limitados) y Flexi Técnico 12 meses. Se solicitan en https://financiacion.unab.edu.co/.",
+  "source_url": "https://unab.edu.co/apoyo-financiero/"
+ },
+ {
+  "question": "¿Qué becas hay?",
+  "keywords": "¿Qué becas ofrece la UNAB?; becas de pregrado; ¿Hay descuentos en la matrícula?",
+  "answer": "Para pregrado hay becas por excelencia académica, por resultados sobresalientes en las pruebas de Estado, de talento deportivo, científico y artístico, becas por donaciones, el beneficio comunidad UNAB y descuentos por convenios. Las solicitudes que lo requieran se hacen en MiPortalU dentro de las fechas establecidas.",
+  "source_url": "https://unab.edu.co/becas/pregrado/"
+ },
+ {
+  "question": "¿Puedo usar ICETEX?",
+  "keywords": "¿La UNAB acepta crédito ICETEX?; crédito con ICETEX",
+  "answer": "Sí. ICETEX es aliado de la UNAB para créditos educativos, becas, subsidios y fondos especiales: https://web.icetex.gov.co/creditos.",
+  "source_url": "https://unab.edu.co/apoyo-financiero/"
+ },
+ {
+  "question": "¿Cómo me inscribo a la UNAB?",
+  "keywords": "¿Cómo entro a la UNAB?; ¿Dónde me inscribo?; inscripciones UNAB",
+  "answer": "La inscripción se hace en la página de Admisiones UNAB: https://unab.edu.co/admisiones/. En Quiero ser UNAB de la app ves los programas con su precio verificado en vivo.",
+  "source_url": "https://unab.edu.co/admisiones/"
+ },
+ {
+  "question": "¿Cómo agrego mi horario?",
+  "keywords": "¿Cómo pongo mis clases en la app?; ¿Cómo agrego una materia al horario?",
+  "answer": "En Soy UNAB, Horario, toca + Materia, escribe el nombre, elige los días y la hora de inicio con su duración. La app te muestra tu próxima clase y te puede avisar antes de que empiece.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Cómo calculo mi promedio en la app?",
+  "keywords": "¿Cuánto necesito para pasar?; ¿Cómo pongo mis notas?",
+  "answer": "En Soy UNAB, Calculadora, agrega tu materia: ya viene con 2 cortes del 50 %. En cada corte toca el tipo de nota (parcial, quiz, taller…) y escribe tu nota. La app te dice tu promedio y cuánto necesitas en lo que falta para pasar con 3.0.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Me puedes avisar antes de clase?",
+  "keywords": "recordatorios de clase; ¿Cómo activo las notificaciones de clase?",
+  "answer": "En Horario, en la tarjeta de recordatorios, elige 30 minutos o 1 hora antes y permite las notificaciones. El celular te avisará antes de cada clase.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Dónde guardo el QR del bus?",
+  "keywords": "¿Cómo uso el Checking-Bus?; QR del bus; ¿Cómo muestro el QR del bus?",
+  "answer": "En Soy UNAB, Bus UNAB toca Mostrar QR del bus y sube un pantallazo del QR de tu Checking-Bus. La app lo recorta, lo guarda cifrado solo en tu teléfono y, al mostrarlo, sube el brillo al máximo para que el lector lo lea mejor.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Dónde está el bus de la UNAB?",
+  "keywords": "¿Cuánto falta para que llegue el bus?; mapa del bus; ¿Por dónde va el bus de la universidad?; ruta del bus UNAB",
+  "answer": "En Soy UNAB, Bus UNAB está el mapa del bus entre sedes (Campus El Jardín, CSU y Campus El Bosque) con sus paradas y, cuando el GPS del bus está conectado, dónde va y cuántos minutos le faltan para la próxima parada. Toca el mapa para verlo en pantalla completa.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Qué significa profe coche?",
+  "keywords": "jerga de la universidad; palabras que usan en la U; ¿Qué significan las siglas de la UNAB?",
+  "answer": "En el Diccionario UNAB de Soy UNAB encuentras siglas como PPA y PGA, términos del reglamento y la jerga universitaria, como profe coche (profesor fácil) o primíparo (estudiante de primer semestre).",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Para qué sirve cada botón?",
+  "keywords": "¿Qué hace cada botón de la app?; ¿Qué puedo hacer en la app?; ¿Cómo funciona UNAB GO?; ¿Qué tiene la app?; explícame la app; ¿Qué hay en Soy UNAB?",
+  "answer": "En Soy UNAB (Inicio) encuentras:\n• UNAB Radio: escucha la emisora en vivo; sigue sonando al salir de la app.\n• Próxima clase: cuánto falta para tu siguiente clase.\n• Horario: tus clases de la semana y recordatorios antes de cada una.\n• Calculadora: tus notas por cortes, tu promedio y cuánto necesitas para pasar.\n• Bus UNAB: el mapa del bus entre sedes y el QR de tu Checking-Bus.\n• Carnet: abre tu carnet digital en la app oficial VeCard.\n• Material de estudio: carpetas con material por nivel de formación.\n• Diccionario UNAB: siglas, términos del reglamento y jerga universitaria.\n• TEMA, Cosmos, miportalU y Biblioteca: las plataformas oficiales de la UNAB.\n• Avisos: noticias y eventos de unab.edu.co.\n• Mapa: los bloques y lugares del campus.\n• Apoyo financiero: planes de financiación, becas y descuentos.\nY en la barra de abajo estoy yo, Banu, para resolver tus dudas, junto a tu Perfil.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Cómo escucho UNAB Radio?",
+  "keywords": "¿La app tiene radio?; ¿Qué es UNAB Radio?; emisora de la UNAB; ¿Puedo escuchar la radio con la app cerrada?; ¿Cómo pauso la radio?",
+  "answer": "UNAB Radio es la emisora online de la UNAB. En Inicio toca ▶ en la tarjeta de UNAB Radio: el texto que se mueve te muestra el programa al aire y el que sigue. Sigue sonando aunque salgas de la app o apagues la pantalla, y la pausas desde la misma tarjeta, la notificación o la pantalla de bloqueo.",
+  "source_url": "https://unabradio.com/"
+ },
+ {
+  "question": "¿Para qué sirve el botón Carnet?",
+  "keywords": "¿Dónde está mi carnet digital?; carnet estudiantil; ¿Cómo uso el carnet en la app?",
+  "answer": "El botón Carnet abre tu carnet estudiantil digital en la app oficial VeCard. Si no la tienes, te lleva a Play Store para instalarla. Necesitas haber iniciado sesión en UNAB GO.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Qué es Material de estudio?",
+  "keywords": "¿Para qué sirve Material de estudio?; ¿Dónde hay material de estudio?",
+  "answer": "Material de estudio reúne carpetas con material de apoyo organizadas por nivel: pregrado, posgrado, técnico y tecnológico, y virtual. Toca la que te corresponde para abrirla.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Qué hay en Avisos?",
+  "keywords": "¿Dónde veo las noticias de la UNAB?; ¿Para qué sirve Avisos?",
+  "answer": "En Avisos ves las noticias y eventos publicados en unab.edu.co, filtrados por categoría. Toca una noticia para leerla completa dentro de la app.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Para qué sirve el mapa?",
+  "keywords": "¿Cómo encuentro un bloque?; mapa de la universidad",
+  "answer": "El Mapa muestra los bloques y lugares del campus. También puedes preguntarme, por ejemplo, ¿dónde queda el CSU?, y te doy la ubicación con un botón para abrir Google Maps.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Quién eres?",
+  "keywords": "¿Qué es Banu?; ¿Qué puedes hacer?; ¿En qué me ayudas?",
+  "answer": "Soy Banu, el búho asistente de UNAB GO 🦉. Respondo con información oficial de la UNAB: reglamento, programas y precios, financiación, plataformas, lugares del campus, noticias, UNAB Radio y cómo usar la app. Si no estoy seguro de algo, te digo dónde consultarlo.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Qué hay en mi perfil?",
+  "keywords": "¿Cómo cambio el idioma?; ¿Cómo cierro sesión?",
+  "answer": "En Perfil ves tu cuenta, accesos rápidos a Horario y Calculadora, el idioma de la app, las notificaciones, sugerencias, la política de datos y el botón para cerrar sesión.",
+  "source_url": "https://unab.edu.co"
+ },
+ {
+  "question": "¿Cómo saco cita con psicología?",
+  "keywords": "¿Cómo pido cita con el psicólogo?; ¿La UNAB tiene psicólogo?; asesoría psicológica; quiero ir al psicólogo; cita con Bienestar; ¿Dónde pido ayuda psicológica?",
+  "answer": "Bienestar Universitario ofrece asesoría psicológica, que orienta en lo emocional y afectivo. Para pedir tu cita entra a miportalU o llama al (607) 643 6111, extensión 212. Su horario publicado es de lunes a viernes, de 8:00 a. m. a 12:00 m. y de 2:00 a 6:00 p. m.. Si es una emergencia, llama al 123.",
+  "source_url": "https://unab.edu.co/bienestar/"
+ },
+ {
+  "question": "¿Qué es Bienestar Universitario?",
+  "keywords": "¿Qué ofrece Bienestar?; grupos artísticos; selecciones deportivas; ¿Cómo entro a un grupo de la U?; actividades de Bienestar",
+  "answer": "Bienestar Universitario tiene tres líneas: desarrollo humano (habilidades para la vida, salud física y mental, convivencia, diversidad e inclusión), cultura (cursos, grupos representativos, clubes y agenda cultural) y deporte (cursos, acondicionamiento físico y selecciones deportivas). También ofrece asesoría psicológica.",
+  "source_url": "https://unab.edu.co/bienestar/"
+ },
+ {
+  "question": "líneas de ayuda emocional",
+  "keywords": "número de emergencia; línea de atención psicológica 24 horas; ¿A dónde llamo si necesito ayuda emocional?; teléfonos de ayuda en Bucaramanga",
+  "answer": "Si necesitas atención fuera del horario universitario o en una emergencia, Bienestar UNAB recomienda:\n• Emergencias: línea 123.\n• Línea de apoyo emocional de la Alcaldía de Bucaramanga: (607) 6330000, WhatsApp 3214517475.\n• Línea nacional: 132.\n• Teleorientación psicológica de Santander (24 horas): 67008888, extensiones 1114 a 1123, WhatsApp 3174402158.\n• Primeros auxilios psicológicos ISABU (7:00 a. m. a 7:00 p. m.): 3185489377.",
+  "source_url": "https://unab.edu.co/bienestar/"
+ },
+ {
+  "question": "¿Qué es la DEXE?",
+  "keywords": "Dirección de Éxito Estudiantil; tengo dificultades académicas; ¿Quién me ayuda si voy mal?; ¿Qué hago si voy perdiendo materias?; apoyo para estudiantes",
+  "answer": "La Dirección de Éxito Estudiantil (DEXE) acompaña a los estudiantes con dificultades académicas, psicosociales y financieras: en su página puedes agendar una cita. Ofrece consejería académica con un docente consejero de tu programa, tutorías de Ciencias Básicas, Lenguas y Estudios Sociohumanísticos, y talleres de preparación para las pruebas Saber Pro y Saber TyT.",
+  "source_url": "https://unab.edu.co/direccion-de-exito-estudiantil/"
+ },
+ {
+  "question": "¿Qué es la consejería académica?",
+  "keywords": "¿Quién es mi docente consejero?; consejero académico; ¿Quién me orienta con mi plan de estudios?",
+  "answer": "La consejería académica te asigna un docente consejero de tu programa que te orienta desde el inicio hasta tu grado: plan de estudios, cancelaciones y homologaciones, y apoyo si estás en condicional o en prueba académica. La lista de consejeros por programa está en la página de la DEXE.",
+  "source_url": "https://unab.edu.co/direccion-de-exito-estudiantil/"
+ },
+ {
+  "question": "¿Quiénes son los directivos de la UNAB?",
+  "keywords": "¿Dónde encuentro a los directivos?; ¿Quién es el rector?; rector de la UNAB; ¿Cómo contacto al rector?; vicerrectoría académica; ¿Cómo hablo con un directivo?",
+  "answer": "El rector de la UNAB es Juan Camilo Montoya Bozzi, desde diciembre de 2018. La dirección la integran la Rectoría, la Vicerrectoría Académica y la Vicerrectoría Administrativa y Financiera; sus perfiles están en la página de directivos. Para contactarlos usa el conmutador (607) 643 6111, el correo contactenos@unab.edu.co o una solicitud por PQRSF. Para temas de tu carrera, empieza por el director o coordinador de tu programa y el decanato de tu facultad.",
+  "source_url": "https://unab.edu.co/directivos-unab/"
+ },
+ {
+  "question": "¿Cómo pongo una queja?",
+  "keywords": "¿Dónde hago un reclamo?; PQRSF; ¿Cómo hago una sugerencia a la universidad?",
+  "answer": "Las peticiones, quejas, reclamos, sugerencias y felicitaciones se radican en PQRSF: https://unab.edu.co/pqrsf/.",
+  "source_url": "https://unab.edu.co/pqrsf/"
+ },
+ {
+  "question": "¿Dónde está el reglamento estudiantil?",
+  "keywords": "reglamento de la UNAB; ¿Me pasas el reglamento?; link del reglamento; ¿Dónde leo los reglamentos?; reglamento de pregrado; reglamento de posgrado",
+  "answer": "Estos son los reglamentos oficiales de la UNAB:\n• Pregrado: https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf\n• Posgrados: https://unab.edu.co/wp-content/uploads/2022/06/Reglamento-posgrados.pdf\n• Técnicos laborales (Educación para el Trabajo): https://unab.edu.co/wp-content/uploads/2024/05/Reglamento_ETDH_SFT.pdf\nTambién puedes ver el Código de Ética: https://unab.edu.co/wp-content/uploads/2022/05/CODIGO_ETICA.pdf.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Con cuánto se aprueba en posgrado?",
+  "keywords": "nota mínima en especialización; ¿Con cuánto paso en la maestría?; nota aprobatoria posgrado; ¿Cuántas fallas puedo tener en posgrado?",
+  "answer": "En posgrado (especializaciones y maestrías) un curso se aprueba con 3.5, y la nota final se registra en unidades y décimas sin aproximar. En programas presenciales debes asistir al menos al 70 % de las actividades: con 30 % o más de inasistencia el curso se cancela. Para graduarte necesitas un PGA de 3.50 o más.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2022/06/Reglamento-posgrados.pdf"
+ },
+ {
+  "question": "¿Qué hago si me hacen bullying?",
+  "keywords": "¿Qué hago si veo bullying?; ¿El acoso es una falta?; ¿Qué pasa si alguien acosa a otro estudiante?; matoneo en la universidad; ¿Cómo denuncio a alguien que me molesta?; ciberacoso; ¿Qué hago si un compañero me humilla?",
+  "answer": "En la UNAB el acoso a cualquier miembro de la comunidad es una falta grave, y es gravísima si pone en grave riesgo la integridad, la libertad o la intimidad de alguien (artículos 98 y 99); no informar una falta gravísima también es falta (artículo 103). Si te pasa o lo ves:\n• Guarda evidencias (capturas, fechas, testigos).\n• Cuéntalo al director o coordinador del programa, al docente consejero o por PQRSF.\n• Si es por género, orientación sexual o es acoso sexual, el Comité de Género lo atiende en denunciasVBG@unab.edu.co.\n• Bienestar Universitario te acompaña con asesoría psicológica.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Cómo denuncio acoso sexual?",
+  "keywords": "violencia de género en la universidad; ¿Qué es el Comité de Género?; me tocaron sin permiso; discriminación por ser LGBTIQ+; ¿Dónde denuncio violencia basada en género?",
+  "answer": "El Comité de Género de la UNAB atiende de forma confidencial las situaciones de discriminación y violencias basadas en género. Puedes presentar la queja por correo a denunciasVBG@unab.edu.co o comitegenero@unab.edu.co, en los buzones de Bienestar Universitario de los campus Terrazas y El Bosque, o de forma presencial en Bienestar. Si estás en peligro, llama al 123.",
+  "source_url": "https://unab.edu.co/politica-institucional-para-la-equidad-de-genero/"
+ },
+ {
+  "question": "¿La UNAB tiene apoyo para personas con discapacidad?",
+  "keywords": "¿Qué es EntreSeres?; inclusión en la UNAB; soy sordo, ¿me pueden ayudar?; tengo discapacidad visual; estudiante en silla de ruedas; tengo autismo, ¿qué apoyo hay?; ajustes razonables",
+  "answer": "Sí. EntreSeres, el programa de inclusión de Bienestar Universitario, acompaña a estudiantes con cualquier tipo de discapacidad (física, visual, auditiva, psicosocial o cognitiva) y otras condiciones especiales con apoyo psicosocial y académico, y orienta a los programas para hacer los ajustes que necesites. Contacta a Bienestar Universitario al (607) 643 6111, extensión 212.",
+  "source_url": "https://unab.edu.co/conoce-la-ruta-de-entreseres-el-programa-de-inclusion-de-la-unab/"
+ },
+ {
+  "question": "¿Qué pasa si copio en un examen?",
+  "keywords": "¿Qué es fraude académico?; ¿Qué pasa si hago plagio?; me pillaron copiando; ¿Puedo usar trabajos de otros?",
+  "answer": "El fraude académico (usar ayudas no autorizadas en exámenes, pruebas o trabajos, o alterar una evaluación ya corregida) y el plagio (presentar como propia una creación ajena) son faltas graves según el Reglamento Estudiantil (artículos 99, 101 y 102) y tienen sanciones disciplinarias. Cita siempre tus fuentes.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Puedo usar ChatGPT en la universidad?",
+  "keywords": "¿Se puede usar inteligencia artificial en las tareas?; ¿La UNAB tiene ChatGPT?; uso de IA en clase",
+  "answer": "La UNAB tiene licencias de ChatGPT para profesores y personal administrativo, con un reglamento de uso ético que gestiona UNAB Creative. Si eres estudiante, pregunta a tu profesor si permite usar IA en cada actividad: presentar como propio un trabajo hecho por otra persona o herramienta puede considerarse plagio, que es una falta grave.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2022/10/Reglamento-de-Uso-de-ChatGPT-en-la-Universidad-UNAB.pdf"
+ },
+ {
+  "question": "¿Cuáles son mis derechos como estudiante?",
+  "keywords": "derechos del estudiante UNAB; ¿Qué derechos tengo?; deberes del estudiante",
+  "answer": "Según el Reglamento Estudiantil (artículos 74 y 75), entre tus derechos están: conocer la guía de cátedra de cada curso al inicio, recibir a tiempo tus notas y pedir su revisión, expresar tus ideas con respeto, elegir y ser elegido representante estudiantil y participar en becas e intercambios. Entre tus deberes: cumplir los reglamentos, asistir a clase y respetar los plazos del calendario académico.",
+  "source_url": "https://unab.edu.co/wp-content/uploads/2026/04/Reglamento-estudiantil-pregrado.pdf"
+ },
+ {
+  "question": "¿Cómo pido reserva de cupo?",
+  "keywords": "¿Cómo me retiro de la carrera?; solicitud de reintegro; quiero aplazar el semestre; ¿Cómo vuelvo a la universidad?; pasos de la matrícula",
+  "answer": "En la página Estudiantes de la UNAB están los formatos oficiales: reserva de cupo (para aplazar), reintegro (para volver), el procedimiento de retiro de un programa y los pasos de la matrícula.",
+  "source_url": "https://unab.edu.co/estudiantes/"
+ },
+ {
+  "question": "¿Qué es el Saber Pro?",
+  "keywords": "¿Cuándo presento el Saber Pro?; Saber TyT; preparación para el Saber Pro",
+  "answer": "El Saber Pro (o Saber TyT en técnicos y tecnólogos) es el examen de Estado de la educación superior. Lo presentas cuando has cumplido el 75 % de los créditos de tu plan de estudios. La Dirección de Éxito Estudiantil ofrece simulacros y talleres de preparación en razonamiento cuantitativo, lectura crítica, comunicación escrita, competencias ciudadanas e inglés.",
+  "source_url": "https://unab.edu.co/direccion-de-exito-estudiantil/"
+ },
+ {
+  "question": "¿Qué significa una palabra de la U?",
+  "keywords": "no entiendo una sigla; ¿Dónde busco qué significa un término?",
+  "answer": "Búscalo en el Diccionario UNAB: tiene siglas, términos del reglamento y la jerga universitaria. También puedes preguntarme, por ejemplo, ¿qué significa PGA? o ¿qué es un primíparo?",
+  "source_url": "https://unab.edu.co"
+ }
+]

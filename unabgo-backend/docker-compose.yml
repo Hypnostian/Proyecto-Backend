@@ -1,0 +1,17 @@
+# PostgreSQL para desarrollo (opcional: sin esto el backend usa H2 en un archivo local).
+#   docker compose up -d
+# y en .env:  DB_URL=jdbc:postgresql://localhost:5432/unabgo  DB_USER=unabgo  DB_PASSWORD=unabgo
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: unabgo
+      POSTGRES_USER: unabgo
+      POSTGRES_PASSWORD: unabgo
+    ports:
+      - "5432:5432"
+    volumes:
+      - unabgo-db:/var/lib/postgresql/data
+
+volumes:
+  unabgo-db:

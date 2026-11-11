@@ -1,0 +1,12 @@
+.gradle/
+build/
+.kotlin/
+.idea/
+*.iml
+out/
+# Configuración local y secretos
+.env
+local.properties
+# Base de datos local (H2)
+data/
+*.log

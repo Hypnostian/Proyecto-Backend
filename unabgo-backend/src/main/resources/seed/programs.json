@@ -1,0 +1,2282 @@
+[
+ {
+  "slug": "bootcamp-en-litigio-estrategico-y-tecnicas-de-juicio-oral",
+  "name": "Bootcamp en Litigio Estratégico y Técnicas de Juicio Oral",
+  "faculty": "Educación Continua",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 2200000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/bootcamp-en-litigio-estrategico-y-tecnicas-de-juicio-oral/"
+ },
+ {
+  "slug": "ciencia-politica-gobierno-y-relaciones-internacionales",
+  "name": "Ciencia Política, Gobierno y Relaciones Internacionales",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 6807990,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/ciencia-politica-gobierno-y-relaciones-internacionales/"
+ },
+ {
+  "slug": "creacion-y-automatizacion-de-agentes-con-ia-ingenieria-industrial",
+  "name": "Creación y Automatización de Agentes con IA",
+  "faculty": "Educación Continua",
+  "level": "Curso",
+  "modality": "Remoto",
+  "price_cop": 850000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/creacion-y-automatizacion-de-agentes-con-ia-ingenieria-industrial/"
+ },
+ {
+  "slug": "gerencia-de-negocios-internacionales-logistica-y-comercio-inteligente",
+  "name": "Gerencia de Negocios Internacionales, Logística y Comercio Inteligente",
+  "faculty": "A iniciar próximamente; Cursos avanzados; Educación Continua",
+  "level": "Curso avanzado",
+  "modality": "Presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/gerencia-de-negocios-internacionales-logistica-y-comercio-inteligente/"
+ },
+ {
+  "slug": "ingenieria-en-inteligencia-artificial",
+  "name": "Ingeniería en Inteligencia Artificial",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7940064,
+  "snies": "119546",
+  "url": "https://unab.edu.co/programas/ingenieria-en-inteligencia-artificial/"
+ },
+ {
+  "slug": "artes-escenicas",
+  "name": "Artes Escénicas",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 8362810,
+  "snies": "119461",
+  "url": "https://unab.edu.co/programas/artes-escenicas/"
+ },
+ {
+  "slug": "ingenieria-en-ciberseguridad",
+  "name": "Ingeniería en Ciberseguridad",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7940064,
+  "snies": "119547",
+  "url": "https://unab.edu.co/programas/ingenieria-en-ciberseguridad/"
+ },
+ {
+  "slug": "diplomado-gestion-integral-para-la-jurisdiccion-agraria-y-la-gobernanza-territorial",
+  "name": "Diplomado en Derecho Agrario y Gestión Pública para el Desarrollo Territorial UDCA – UNAB",
+  "faculty": "A iniciar próximamente; Educación Continua",
+  "level": "Diplomado",
+  "modality": "100 % remoto en tiempo real",
+  "price_cop": 2100000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/diplomado-gestion-integral-para-la-jurisdiccion-agraria-y-la-gobernanza-territorial/"
+ },
+ {
+  "slug": "haz-que-se-vea-delicioso-fotografia-gastronomica-para-redes-y-negocios",
+  "name": "Haz que se vea delicioso: Fotografía Gastronómica para redes y negocios",
+  "faculty": "A iniciar próximamente; Educación Continua",
+  "level": "Taller",
+  "modality": "Presencial",
+  "price_cop": 443000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/haz-que-se-vea-delicioso-fotografia-gastronomica-para-redes-y-negocios/"
+ },
+ {
+  "slug": "investigacion-criminal-360-ciencia-metodo-y-estrategia",
+  "name": "Investigación Criminal 360°: Ciencia, Método y Estrategia",
+  "faculty": "A iniciar próximamente; Educación Continua",
+  "level": "Curso",
+  "modality": "Presencial y telepresencial (remota sincrónica)",
+  "price_cop": 800000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/investigacion-criminal-360-ciencia-metodo-y-estrategia/"
+ },
+ {
+  "slug": "curso-de-preparacion-para-acceder-a-tarjeta-profesional-de-abogado",
+  "name": "Curso de preparación para acceder a la tarjeta profesional de abogado (a)",
+  "faculty": "Educación Continua; Leyes, Justicia y Estado",
+  "level": "Curso",
+  "modality": "100% remoto en tiempo real",
+  "price_cop": 792000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-de-preparacion-para-acceder-a-tarjeta-profesional-de-abogado/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-finanzas-corporativas",
+  "name": "Especialización Universitaria en Finanzas Corporativas",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Especialización",
+  "modality": null,
+  "price_cop": 9547200,
+  "snies": "1645",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-finanzas-corporativas/"
+ },
+ {
+  "slug": "curso-tecnologias-emergentes-para-la-rehabilitacion-motora-introduccion-a-la-neuroingenieria-y-las-interfaces-cerebro-computador",
+  "name": "Curso: Tecnologías Emergentes para la Rehabilitación Motora. Introducción a la neuroingeniería y las interfaces cerebro-computador",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "Presencial mediado por tecnología",
+  "price_cop": 600000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-tecnologias-emergentes-para-la-rehabilitacion-motora-introduccion-a-la-neuroingenieria-y-las-interfaces-cerebro-computador/"
+ },
+ {
+  "slug": "posgrados-unab-unisangil",
+  "name": "Posgrados UNAB – UNISANGIL",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/posgrados-unab-unisangil/"
+ },
+ {
+  "slug": "especializacion-en-hematologia",
+  "name": "Especialización en Hematología",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 29193573,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/especializacion-en-hematologia/"
+ },
+ {
+  "slug": "diplomado-en-formulacion-y-gestion-de-proyectos-de-transformacion-social",
+  "name": "Diplomado en Formulación y Gestión de Proyectos de Transformación Social",
+  "faculty": "Sin facultad",
+  "level": "Diplomado",
+  "modality": "Remoto",
+  "price_cop": 2100000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/diplomado-en-formulacion-y-gestion-de-proyectos-de-transformacion-social/"
+ },
+ {
+  "slug": "pregrado-en-diseno-unab",
+  "name": "pregrado en diseno unab",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": null,
+  "snies": "118687",
+  "url": "https://unab.edu.co/programas/pregrado-en-diseno-unab/"
+ },
+ {
+  "slug": "curso-avanzado-de-radiaciones-ionizantes",
+  "name": "Diplomado en Equipos de Radiaciones Ionizantes",
+  "faculty": "Sin facultad",
+  "level": "Diplomado",
+  "modality": "Presencial",
+  "price_cop": 2410000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-avanzado-de-radiaciones-ionizantes/"
+ },
+ {
+  "slug": "curso-avanzado-en-estrategia-y-negocios-globales",
+  "name": "Curso Avanzado en Estrategia y Negocios Globales",
+  "faculty": "A iniciar próximamente",
+  "level": "Curso avanzado",
+  "modality": "Presencial / Híbrida",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-avanzado-en-estrategia-y-negocios-globales/"
+ },
+ {
+  "slug": "licenciatura-en-lenguas-extranjeras",
+  "name": "Licenciatura en Lenguas Extranjeras con Énfasis en Inglés y Español",
+  "faculty": "Departamento de Lenguas",
+  "level": "Profesional",
+  "modality": null,
+  "price_cop": 4254480,
+  "snies": "118923",
+  "url": "https://unab.edu.co/programas/licenciatura-en-lenguas-extranjeras/"
+ },
+ {
+  "slug": "programa-juntas-directivas-gobierno-de-familia-y-decision-estrategica",
+  "name": "Programa Juntas Directivas Gobierno de Familia y Decisión estratégica",
+  "faculty": "A iniciar próximamente; Cursos avanzados",
+  "level": "Formación Corporativa",
+  "modality": "Presencial",
+  "price_cop": 990000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/programa-juntas-directivas-gobierno-de-familia-y-decision-estrategica/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-contratacion-estatal-convenio-unisangil-yopal",
+  "name": "Especialización Universitaria en Contratación Estatal – Convenio Unisangil – Yopal",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9517400,
+  "snies": "109348",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-contratacion-estatal-convenio-unisangil-yopal/"
+ },
+ {
+  "slug": "tecnico-avanzado-en-prevencion-gestion-y-control-ambiental",
+  "name": "Técnico Avanzado en Prevención, Gestión y Control Ambiental",
+  "faculty": "UNAB Tec",
+  "level": "Técnico laboral",
+  "modality": "Presencial",
+  "price_cop": 2965200,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/tecnico-avanzado-en-prevencion-gestion-y-control-ambiental/"
+ },
+ {
+  "slug": "escuela-ajedrez-unab-kids",
+  "name": "Escuela de Ajedrez – UNAB Kids",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 945000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/escuela-ajedrez-unab-kids/"
+ },
+ {
+  "slug": "temp-preg",
+  "name": "temp-preg",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/temp-preg/"
+ },
+ {
+  "slug": "preparacion-para-el-examen-celpe-bras",
+  "name": "Preparación para el examen Celpe Bras",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "Presencial personalizado",
+  "price_cop": 3350000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/preparacion-para-el-examen-celpe-bras/"
+ },
+ {
+  "slug": "examen-toefl-ibt",
+  "name": "Preparación para el examen TOEFL iBT",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "Presencial personalizado",
+  "price_cop": 3350000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/examen-toefl-ibt/"
+ },
+ {
+  "slug": "diplomado-conciliacion-extrajudicial-en-derecho",
+  "name": "Diplomado: Formación de conciliadores extrajudiciales en Derecho",
+  "faculty": "A iniciar próximamente; Leyes, Justicia y Estado",
+  "level": "Diplomado",
+  "modality": "B-learning",
+  "price_cop": 1250000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/diplomado-conciliacion-extrajudicial-en-derecho/"
+ },
+ {
+  "slug": "examen-ielts",
+  "name": "Examen IELTS",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "Presencial personalizado",
+  "price_cop": 3350000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/examen-ielts/"
+ },
+ {
+  "slug": "especializacion-en-geriatria",
+  "name": "Especialización en Geriatría",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 30709510,
+  "snies": "118474",
+  "url": "https://unab.edu.co/programas/especializacion-en-geriatria/"
+ },
+ {
+  "slug": "curso-integral-de-actualizacion-notarial-y-registral",
+  "name": "Curso integral de Actualización Notarial y Registral",
+  "faculty": "A iniciar próximamente",
+  "level": "Curso",
+  "modality": "100% remoto en tiempo real",
+  "price_cop": 2150000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-integral-de-actualizacion-notarial-y-registral/"
+ },
+ {
+  "slug": "quimica-farmaceutica",
+  "name": "Química Farmacéutica",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 8453920,
+  "snies": "118399",
+  "url": "https://unab.edu.co/programas/quimica-farmaceutica/"
+ },
+ {
+  "slug": "unabkids-kickers",
+  "name": "unabkids kickers",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 1260000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unabkids-kickers/"
+ },
+ {
+  "slug": "programas-neoww",
+  "name": "programas-neoww",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": "Virtual",
+  "price_cop": 10796390,
+  "snies": "110468",
+  "url": "https://unab.edu.co/programas/programas-neoww/"
+ },
+ {
+  "slug": "contabilidad-y-finanzas",
+  "name": "Contabilidad y Finanzas",
+  "faculty": "UNAB Tec",
+  "level": "Programa",
+  "modality": "Presencial",
+  "price_cop": 3536525,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/contabilidad-y-finanzas/"
+ },
+ {
+  "slug": "manejo-de-herramientas-para-codificacion-de-software",
+  "name": "Manejo de Herramientas para Codificación de Software",
+  "faculty": "UNAB Tec",
+  "level": "Programa",
+  "modality": "Presencial",
+  "price_cop": 5275042,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/manejo-de-herramientas-para-codificacion-de-software/"
+ },
+ {
+  "slug": "professional-development-qualification-in-teaching-and-learning",
+  "name": "Professional Development Qualification in Teaching and Learning",
+  "faculty": "Sin facultad",
+  "level": "Diplomado",
+  "modality": "Híbrida",
+  "price_cop": 4850000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/professional-development-qualification-in-teaching-and-learning/"
+ },
+ {
+  "slug": "professional-development-qualification-in-educational-leadership",
+  "name": "Professional Development Qualification in Educational Leadership",
+  "faculty": "Sin facultad",
+  "level": "Diplomado",
+  "modality": "Híbrida",
+  "price_cop": 4850000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/professional-development-qualification-in-educational-leadership/"
+ },
+ {
+  "slug": "diseno",
+  "name": "Diseño",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7552000,
+  "snies": "118687",
+  "url": "https://unab.edu.co/programas/diseno/"
+ },
+ {
+  "slug": "senior",
+  "name": "senior",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 1100000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/senior/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-ambiental-universidad-del-rosario",
+  "name": "Especialización Universitaria en Derecho Ambiental – Universidad del Rosario",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 11160000,
+  "snies": "4317",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-ambiental-universidad-del-rosario/"
+ },
+ {
+  "slug": "curso-gestion-editorial",
+  "name": "Curso: Gestión Editorial",
+  "faculty": "Comunicación, sociedad, arte y cultura",
+  "level": "Curso",
+  "modality": "Virtual",
+  "price_cop": 914121,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-gestion-editorial/"
+ },
+ {
+  "slug": "cursos-especializados-en-automatizacion-industrial",
+  "name": "Cursos especializados en Automatización Industrial",
+  "faculty": "Certificaciones técnicas, empleabilidad y emprendimiento; Educación Continua",
+  "level": "Cursos especializados",
+  "modality": "Presencial y telepresencial (remota sincrónica)",
+  "price_cop": 5556000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/cursos-especializados-en-automatizacion-industrial/"
+ },
+ {
+  "slug": "ingenieria-industrial-virtual",
+  "name": "Ingeniería Industrial – Virtual",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Profesional",
+  "modality": "Virtual",
+  "price_cop": 2779950,
+  "snies": "115825",
+  "url": "https://unab.edu.co/programas/ingenieria-industrial-virtual/"
+ },
+ {
+  "slug": "curso-soporte-vital-basico-avanzado-aha-estudiantes-unab",
+  "name": "Curso: Soporte Vital Básico + Avanzado AHA",
+  "faculty": "Salud, bienestar y cuidado personal",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 545000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-soporte-vital-basico-avanzado-aha-estudiantes-unab/"
+ },
+ {
+  "slug": "pospro2025",
+  "name": "pospro2025",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": "Presencial",
+  "price_cop": 29346950,
+  "snies": "105157",
+  "url": "https://unab.edu.co/programas/pospro2025/"
+ },
+ {
+  "slug": "licenciatura-en-ciencias-sociales",
+  "name": "Licenciatura en Ciencias Sociales",
+  "faculty": "Departamento de Estudios Sociohumanísticos",
+  "level": "Profesional",
+  "modality": "Híbrida",
+  "price_cop": 4254480,
+  "snies": "118122",
+  "url": "https://unab.edu.co/programas/licenciatura-en-ciencias-sociales/"
+ },
+ {
+  "slug": "psicologia-convenio-unisangil-yopal",
+  "name": "Psicología Convenio Unisangil Yopal",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 5939776,
+  "snies": "105646",
+  "url": "https://unab.edu.co/programas/psicologia-convenio-unisangil-yopal/"
+ },
+ {
+  "slug": "tecnologia-gestion-de-negocios-virtual",
+  "name": "Gestión de Negocios – Virtual",
+  "faculty": "UNAB Tec",
+  "level": "Tecnología",
+  "modality": "Virtual",
+  "price_cop": 2675160,
+  "snies": "117984",
+  "url": "https://unab.edu.co/programas/tecnologia-gestion-de-negocios-virtual/"
+ },
+ {
+  "slug": "gestion-de-negocios",
+  "name": "Gestión de Negocios",
+  "faculty": "UNAB Tec",
+  "level": "Programa",
+  "modality": "Presencial",
+  "price_cop": 2675160,
+  "snies": "117983",
+  "url": "https://unab.edu.co/programas/gestion-de-negocios/"
+ },
+ {
+  "slug": "core-global-business",
+  "name": "CORE Global Businnes",
+  "faculty": "Sin facultad",
+  "level": "Programa Executive",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/core-global-business/"
+ },
+ {
+  "slug": "formacion-avanzada-en-farmacovigilancia",
+  "name": "Formación Avanzada en Farmacovigilancia",
+  "faculty": "Sin facultad",
+  "level": "Formación avanzada",
+  "modality": "Conexión sincrónica",
+  "price_cop": 650000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/formacion-avanzada-en-farmacovigilancia/"
+ },
+ {
+  "slug": "menor-en-analisis-de-datos-para-la-salud-y-la-sociedad",
+  "name": "Menor en Análisis de datos para la salud y la sociedad",
+  "faculty": "Salud; Social",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/menor-en-analisis-de-datos-para-la-salud-y-la-sociedad/"
+ },
+ {
+  "slug": "unab-summer",
+  "name": "Unab summer",
+  "faculty": "A iniciar próximamente",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 1161500,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unab-summer/"
+ },
+ {
+  "slug": "curso-actualizacion-reforma-laboral-y-sst",
+  "name": "Curso de actualización en Reforma Laboral y SST",
+  "faculty": "Leyes, Justicia y Estado",
+  "level": "Curso",
+  "modality": "100% remoto en tiempo real",
+  "price_cop": 950000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-actualizacion-reforma-laboral-y-sst/"
+ },
+ {
+  "slug": "curso-la-autodeterminacion-de-las-personas-con-discapacidad",
+  "name": "Curso: La autodeterminación de las personas con discapacidad",
+  "faculty": "Leyes, Justicia y Estado",
+  "level": "Curso",
+  "modality": "Virtual",
+  "price_cop": 495000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-la-autodeterminacion-de-las-personas-con-discapacidad/"
+ },
+ {
+  "slug": "especializacion-en-derecho-laboral-y-seguridad-social",
+  "name": "Especialización en Derecho Laboral y Seguridad Social",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "virtual",
+  "price_cop": 8346720,
+  "snies": "117494",
+  "url": "https://unab.edu.co/programas/especializacion-en-derecho-laboral-y-seguridad-social/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-revisoria-fiscal-y-auditoria-externa-convenio-unisangil-yopal",
+  "name": "Especialización Universitaria en Revisoría Fiscal y Auditoría Externa – Convenio Unisangil Yopal",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9676920,
+  "snies": "1649",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-revisoria-fiscal-y-auditoria-externa-convenio-unisangil-yopal/"
+ },
+ {
+  "slug": "pregrado-finanzas",
+  "name": "Finanzas",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7419600,
+  "snies": "118124",
+  "url": "https://unab.edu.co/programas/pregrado-finanzas/"
+ },
+ {
+  "slug": "especializacion-tecnologica-en-farmacovigilancia-y-tecnovigilancia-convenio-universidad-ces",
+  "name": "Especialización Tecnológica en Farmacovigilancia y Tecnovigilancia – Convenio Universidad CES",
+  "faculty": "UNAB Tec",
+  "level": "Especialización tecnológica",
+  "modality": "Virtual",
+  "price_cop": 3874970,
+  "snies": "110762",
+  "url": "https://unab.edu.co/programas/especializacion-tecnologica-en-farmacovigilancia-y-tecnovigilancia-convenio-universidad-ces/"
+ },
+ {
+  "slug": "especializacion-en-cirugia-general",
+  "name": "Especialización en Cirugía General",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 30355850,
+  "snies": "117657",
+  "url": "https://unab.edu.co/programas/especializacion-en-cirugia-general/"
+ },
+ {
+  "slug": "especializacion-en-medicina-de-urgencias",
+  "name": "Especialización en Medicina de Urgencias",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 30355850,
+  "snies": "117328",
+  "url": "https://unab.edu.co/programas/especializacion-en-medicina-de-urgencias/"
+ },
+ {
+  "slug": "especializacion-en-pediatria",
+  "name": "Especialización en Pediatría",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 30355850,
+  "snies": "117623",
+  "url": "https://unab.edu.co/programas/especializacion-en-pediatria/"
+ },
+ {
+  "slug": "tecnologia-en-desarrollo-de-software",
+  "name": "Desarrollo de Software",
+  "faculty": "UNAB Tec",
+  "level": "Tecnología",
+  "modality": "Dual",
+  "price_cop": 2148000,
+  "snies": "117232",
+  "url": "https://unab.edu.co/programas/tecnologia-en-desarrollo-de-software/"
+ },
+ {
+  "slug": "carrera-negocios-internacionales-virtual",
+  "name": "Negocios Internacionales – Virtual",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Virtual",
+  "price_cop": 2965280,
+  "snies": "118091",
+  "url": "https://unab.edu.co/programas/carrera-negocios-internacionales-virtual/"
+ },
+ {
+  "slug": "ciencia-de-datos",
+  "name": "Ciencia de Datos",
+  "faculty": "Departamento de Ciencias Básicas",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 8906880,
+  "snies": "117735",
+  "url": "https://unab.edu.co/programas/ciencia-de-datos/"
+ },
+ {
+  "slug": "unabkids-artes-plasticas",
+  "name": "Unabkids artes plasticas",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 65000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unabkids-artes-plasticas/"
+ },
+ {
+  "slug": "unabkids-tenis",
+  "name": "unabkids tenis",
+  "faculty": "Sin facultad",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 1260000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unabkids-tenis/"
+ },
+ {
+  "slug": "curso-avanzado-procesos-extrajudiciales-de-familia",
+  "name": "Curso avanzado: Procesos extrajudiciales de familia",
+  "faculty": "Educación Continua",
+  "level": "Curso avanzado",
+  "modality": "Presencial",
+  "price_cop": 807100,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-avanzado-procesos-extrajudiciales-de-familia/"
+ },
+ {
+  "slug": "certificacion-aptis",
+  "name": "Certificación Aptis",
+  "faculty": "Sin facultad",
+  "level": "Curso de preparación",
+  "modality": "Personalizado",
+  "price_cop": 412500,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/certificacion-aptis/"
+ },
+ {
+  "slug": "curso-calculo-diferencial",
+  "name": "Curso Cálculo Diferencial",
+  "faculty": "Educación Continua",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 1280000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-calculo-diferencial/"
+ },
+ {
+  "slug": "curso-precalculo",
+  "name": "Curso Precálculo",
+  "faculty": "Educación Continua",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 1280000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-precalculo/"
+ },
+ {
+  "slug": "derecho-virtual",
+  "name": "Derecho – Virtual",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Profesional",
+  "modality": "Virtual",
+  "price_cop": 2965280,
+  "snies": "115902",
+  "url": "https://unab.edu.co/programas/derecho-virtual/"
+ },
+ {
+  "slug": "cursos-nudos-y-suturas",
+  "name": "Curso: Nudos y Suturas",
+  "faculty": "Educación Continua; Salud, bienestar y cuidado personal",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 506000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/cursos-nudos-y-suturas/"
+ },
+ {
+  "slug": "curso-esp-for-business",
+  "name": "Curso ESP for Business",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 1450000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-esp-for-business/"
+ },
+ {
+  "slug": "curso-esp-for-humanities-and-arts",
+  "name": "Curso ESP for Humanities and Arts",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 1450000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-esp-for-humanities-and-arts/"
+ },
+ {
+  "slug": "curso-esp-for-law-and-politics",
+  "name": "Curso ESP for Law and Politics",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 1450000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-esp-for-law-and-politics/"
+ },
+ {
+  "slug": "cursos-esp-for-engineering",
+  "name": "Cursos ESP for Engineering",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 1450000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/cursos-esp-for-engineering/"
+ },
+ {
+  "slug": "curso-aleman-personalizado",
+  "name": "Curso alemán personalizado",
+  "faculty": "Idiomas del mundo",
+  "level": "Curso",
+  "modality": "Personalizado",
+  "price_cop": 3200000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-aleman-personalizado/"
+ },
+ {
+  "slug": "curso-esp-for-health",
+  "name": "Curso ESP for Health",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 1450000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-esp-for-health/"
+ },
+ {
+  "slug": "diplomado-en-habilidades-gerenciales-en-la-era-de-la-inteligencia-artificial",
+  "name": "Diplomado en Habilidades gerenciales en la era de la Inteligencia Artificial",
+  "faculty": "Sin facultad",
+  "level": "Diplomado",
+  "modality": "Online",
+  "price_cop": 2200000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/diplomado-en-habilidades-gerenciales-en-la-era-de-la-inteligencia-artificial/"
+ },
+ {
+  "slug": "unabkids-tecnologia",
+  "name": "unabkids tecnología",
+  "faculty": "Unab kids",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 60000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unabkids-tecnologia/"
+ },
+ {
+  "slug": "unabkids-taekwondo",
+  "name": "unabkids taekwondo",
+  "faculty": "Unab kids",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 1260000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unabkids-taekwondo/"
+ },
+ {
+  "slug": "unabkids-ingles",
+  "name": "Unabkids inglés",
+  "faculty": "Unab kids",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 870000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unabkids-ingles/"
+ },
+ {
+  "slug": "unabkids-futbol",
+  "name": "unabkids futbol",
+  "faculty": "Unab kids",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 1260000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unabkids-futbol/"
+ },
+ {
+  "slug": "unabkids-gimnasia",
+  "name": "unabkids Gimnasia",
+  "faculty": "Unab kids",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 1260000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unabkids-gimnasia/"
+ },
+ {
+  "slug": "unabkids-baloncesto",
+  "name": "Unabkids baloncesto",
+  "faculty": "Unab kids",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": 65000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/unabkids-baloncesto/"
+ },
+ {
+  "slug": "menor-en-gestion-de-la-estrategia-y-sostenibilidad",
+  "name": "Menor en Gestión de la estrategia y sostenibilidad",
+  "faculty": "Negocios",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/menor-en-gestion-de-la-estrategia-y-sostenibilidad/"
+ },
+ {
+  "slug": "menor-en-tecnologias-emergentes-de-la-industria",
+  "name": "Menor en Tecnologías emergentes de la industria",
+  "faculty": "Ciencias computacionales y exactas",
+  "level": "Programa",
+  "modality": "presencial y telepresencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/menor-en-tecnologias-emergentes-de-la-industria/"
+ },
+ {
+  "slug": "menor-en-historia",
+  "name": "Menor en Historia",
+  "faculty": "Social",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/menor-en-historia/"
+ },
+ {
+  "slug": "menor-en-logistica-y-cadena-de-suministros",
+  "name": "Menor en Logística y cadena de suministros",
+  "faculty": "Ciencias computacionales y exactas",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/menor-en-logistica-y-cadena-de-suministros/"
+ },
+ {
+  "slug": "menor-en-inteligencia-de-procesos",
+  "name": "Menor en Inteligencia de procesos",
+  "faculty": "Ciencias computacionales y exactas",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/menor-en-inteligencia-de-procesos/"
+ },
+ {
+  "slug": "menor-en-gerencia-de-operaciones-del-comercio-internacional",
+  "name": "Menor en Gerencia de operaciones del comercio internacional",
+  "faculty": "Negocios",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/menor-en-gerencia-de-operaciones-del-comercio-internacional/"
+ },
+ {
+  "slug": "cursos-especializados-sistemas-industriales-inteligentes",
+  "name": "Cursos Especializados en Sistemas Industriales Inteligentes",
+  "faculty": "Cursos avanzados",
+  "level": "Cursos especializados",
+  "modality": "Presencial y telepresencial (remota sincrona)",
+  "price_cop": 4300000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/cursos-especializados-sistemas-industriales-inteligentes/"
+ },
+ {
+  "slug": "psicologia-convenio-unisangil",
+  "name": "Psicología – Convenio Unisangil",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 5598448,
+  "snies": "11950",
+  "url": "https://unab.edu.co/programas/psicologia-convenio-unisangil/"
+ },
+ {
+  "slug": "tecnico-laboral-en-panaderia-y-pasteleria",
+  "name": "Panadería y Pastelería",
+  "faculty": "UNAB Tec",
+  "level": "Técnico laboral",
+  "modality": "Presencial",
+  "price_cop": 3312546,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/tecnico-laboral-en-panaderia-y-pasteleria/"
+ },
+ {
+  "slug": "tecnico-laboral-en-gestion-administrativa",
+  "name": "Gestión Administrativa",
+  "faculty": "UNAB Tec",
+  "level": "Técnico laboral",
+  "modality": "Presencial",
+  "price_cop": 3321770,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/tecnico-laboral-en-gestion-administrativa/"
+ },
+ {
+  "slug": "preparatorio-en-estudios-musicales",
+  "name": "Preparatorio en Estudios Musicales",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Preuniversitario",
+  "modality": "Presencial",
+  "price_cop": 3143400,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/preparatorio-en-estudios-musicales/"
+ },
+ {
+  "slug": "animacion-y-desarrollo-3d",
+  "name": "Menor en Animación y desarrollo 3D",
+  "faculty": "Artes y cultura",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/animacion-y-desarrollo-3d/"
+ },
+ {
+  "slug": "menores-ciencia-de-datos",
+  "name": "Menor en Ciencia de Datos",
+  "faculty": "Ciencias computacionales y exactas",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/menores/ciencia-de-datos/"
+ },
+ {
+  "slug": "ciudadania-paz-y-genero",
+  "name": "Menor en Ciudadanía, paz y género",
+  "faculty": "Social",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/ciudadania-paz-y-genero/"
+ },
+ {
+  "slug": "creacion-en-animacion",
+  "name": "Menor en Creación en animación",
+  "faculty": "Artes y cultura",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/creacion-en-animacion/"
+ },
+ {
+  "slug": "foreign-languages",
+  "name": "Menor en Foreign languages",
+  "faculty": "Comunicación",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/foreign-languages/"
+ },
+ {
+  "slug": "funcion-publica",
+  "name": "Menor en Función pública",
+  "faculty": "Jurídico y político",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/funcion-publica/"
+ },
+ {
+  "slug": "gastronomia",
+  "name": "Menor en Gastronomía",
+  "faculty": "Gastronomía",
+  "level": "Programa",
+  "modality": "virtual",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/gastronomia/"
+ },
+ {
+  "slug": "gerencia-de-la-calidad",
+  "name": "Menor en Gerencia de la calidad",
+  "faculty": "Negocios",
+  "level": "Programa",
+  "modality": "presencial y virtual",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/gerencia-de-la-calidad/"
+ },
+ {
+  "slug": "investigacion-forense",
+  "name": "Menor en Investigación forense",
+  "faculty": "Jurídico y político",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/investigacion-forense/"
+ },
+ {
+  "slug": "lenguajes-inclusivos",
+  "name": "Menor en Lenguajes inclusivos",
+  "faculty": "Social",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/lenguajes-inclusivos/"
+ },
+ {
+  "slug": "marketing-digital",
+  "name": "Menor en Marketing digital",
+  "faculty": "Comunicación",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/marketing-digital/"
+ },
+ {
+  "slug": "terapias-alternativas",
+  "name": "Menor en Terapias alternativas",
+  "faculty": "Salud",
+  "level": "Programa",
+  "modality": "virtual",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/terapias-alternativas/"
+ },
+ {
+  "slug": "prevencion-de-riesgos-laborales",
+  "name": "Menor en Prevención de riesgos laborales",
+  "faculty": "Salud",
+  "level": "Programa",
+  "modality": "virtual",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/prevencion-de-riesgos-laborales/"
+ },
+ {
+  "slug": "pasteleria-y-reposteria",
+  "name": "Menor en Pastelería y repostería",
+  "faculty": "Gastronomía",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/pasteleria-y-reposteria/"
+ },
+ {
+  "slug": "transformacion-y-sensibilidad-social",
+  "name": "Menor en Transformación y sensibilidad social",
+  "faculty": "Social",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/transformacion-y-sensibilidad-social/"
+ },
+ {
+  "slug": "ambiente-y-sostenibilidad",
+  "name": "Menor en Ambiente y sostenibilidad",
+  "faculty": "Sostenibilidad",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/ambiente-y-sostenibilidad/"
+ },
+ {
+  "slug": "interpretacion-instrumental",
+  "name": "Menor en Interpretación instrumental",
+  "faculty": "Artes y cultura",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/interpretacion-instrumental/"
+ },
+ {
+  "slug": "apreciacion-cinematografica",
+  "name": "Menor en Apreciación cinematográfica",
+  "faculty": "Artes y cultura",
+  "level": "Programa",
+  "modality": "presencial",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/apreciacion-cinematografica/"
+ },
+ {
+  "slug": "taller-literatura-y-escrituras-expandidas-con-ia",
+  "name": "Taller: Literatura y escrituras expandidas con IA",
+  "faculty": "UNAB para toda la vida",
+  "level": "Curso",
+  "modality": "Remoto",
+  "price_cop": 175000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/taller-literatura-y-escrituras-expandidas-con-ia/"
+ },
+ {
+  "slug": "curso-finanzas-sostenibles-para-la-biodiversidad-y-taxonomias-verdes",
+  "name": "Curso: Finanzas sostenibles para la biodiversidad y taxonomías verdes",
+  "faculty": "Sin facultad",
+  "level": "Curso",
+  "modality": "virtual",
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-finanzas-sostenibles-para-la-biodiversidad-y-taxonomias-verdes/"
+ },
+ {
+  "slug": "curso-guia-de-derecho-civil",
+  "name": "Curso: Guía de Derecho Civil",
+  "faculty": "Leyes, Justicia y Estado",
+  "level": "Curso",
+  "modality": "Virtual",
+  "price_cop": 885000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-guia-de-derecho-civil/"
+ },
+ {
+  "slug": "diplomado-formacion-en-pedagogia-para-no-licenciados",
+  "name": "Diplomado: Formación en pedagogía para no licenciados",
+  "faculty": "Aprendizaje e innovación educativa y pedagógica",
+  "level": "Diplomado",
+  "modality": "70% presencial mediado por tecnología y 30% virtual",
+  "price_cop": 2430000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/diplomado-formacion-en-pedagogia-para-no-licenciados/"
+ },
+ {
+  "slug": "curso-guia-de-derecho-comercial",
+  "name": "Curso: Guía de Derecho Comercial",
+  "faculty": "Leyes, Justicia y Estado",
+  "level": "Curso",
+  "modality": "Virtual",
+  "price_cop": 885000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-guia-de-derecho-comercial/"
+ },
+ {
+  "slug": "curso-guia-de-derecho-laboral",
+  "name": "Curso: Guía de Derecho Laboral",
+  "faculty": "A iniciar próximamente; Leyes, Justicia y Estado",
+  "level": "Curso",
+  "modality": "Virtual",
+  "price_cop": 885000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-guia-de-derecho-laboral/"
+ },
+ {
+  "slug": "curso-guia-de-derecho-penal",
+  "name": "Curso: Guía de Derecho Penal",
+  "faculty": "Leyes, Justicia y Estado",
+  "level": "Curso",
+  "modality": "Virtual",
+  "price_cop": 885000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-guia-de-derecho-penal/"
+ },
+ {
+  "slug": "curso-guia-de-derecho-publico",
+  "name": "Curso: Guía de Derecho Público",
+  "faculty": "Leyes, Justicia y Estado",
+  "level": "Curso",
+  "modality": "Virtual",
+  "price_cop": 885000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-guia-de-derecho-publico/"
+ },
+ {
+  "slug": "derecho-convenio-unisangil",
+  "name": "Derecho – Convenio Unisangil",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 5788026,
+  "snies": "20837",
+  "url": "https://unab.edu.co/programas/derecho-convenio-unisangil/"
+ },
+ {
+  "slug": "programa-de-estudios-generales-en-salud",
+  "name": "Programa de Estudios Generales en Salud",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Preuniversitario",
+  "modality": "Presencial",
+  "price_cop": 8584000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/programa-de-estudios-generales-en-salud/"
+ },
+ {
+  "slug": "maestria-en-derecho-penal-y-procesal-penal",
+  "name": "Maestría en Derecho Penal y Procesal Penal",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Maestría",
+  "modality": "Virtual",
+  "price_cop": null,
+  "snies": "119652",
+  "url": "https://unab.edu.co/programas/maestria-en-derecho-penal-y-procesal-penal/"
+ },
+ {
+  "slug": "curso-espanol-para-extranjeros",
+  "name": "Curso: Español para extranjeros",
+  "faculty": "A iniciar próximamente; Idiomas del mundo",
+  "level": "Curso",
+  "modality": "Personalizado",
+  "price_cop": 3350000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-espanol-para-extranjeros/"
+ },
+ {
+  "slug": "curso-portugues-personalizado",
+  "name": "Curso: Portugués personalizado",
+  "faculty": "A iniciar próximamente; Idiomas del mundo",
+  "level": "Curso",
+  "modality": "Personalizado",
+  "price_cop": 3350000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-portugues-personalizado/"
+ },
+ {
+  "slug": "curso-frances-personalizado",
+  "name": "Curso: Francés personalizado",
+  "faculty": "A iniciar próximamente; Idiomas del mundo",
+  "level": "Curso",
+  "modality": "Personalizado",
+  "price_cop": 3350000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-frances-personalizado/"
+ },
+ {
+  "slug": "curso-ingles-personalizado",
+  "name": "Curso: Inglés personalizado",
+  "faculty": "A iniciar próximamente; Idiomas del mundo",
+  "level": "Curso",
+  "modality": "Personalizado",
+  "price_cop": 3350000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-ingles-personalizado/"
+ },
+ {
+  "slug": "curso-soporte-vital-basico-avanzado",
+  "name": "Soporte Vital Básico + Avanzado",
+  "faculty": "A iniciar próximamente; Salud, bienestar y cuidado personal",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 490000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-soporte-vital-basico-avanzado/"
+ },
+ {
+  "slug": "curso-soporte-vital-basico-aha-externos",
+  "name": "Curso: Soporte Vital Básico + Avanzado AHA",
+  "faculty": "A iniciar próximamente; Salud, bienestar y cuidado personal",
+  "level": "Curso",
+  "modality": "Presencial",
+  "price_cop": 1000000,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/curso-soporte-vital-basico-aha-externos/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-revisoria-fiscal-y-auditoria-externa",
+  "name": "Especialización Universitaria en Revisoría Fiscal y Auditoría Externa",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9676920,
+  "snies": "1649",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-revisoria-fiscal-y-auditoria-externa/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-planeacion-tributaria",
+  "name": "Especialización Universitaria en Planeación Tributaria",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9664200,
+  "snies": "4257",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-planeacion-tributaria/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-gestion-humana-2",
+  "name": "Especialización Universitaria en Gestión Humana – Virtual",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Especialización",
+  "modality": "Virtual",
+  "price_cop": 9815760,
+  "snies": "110421",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-gestion-humana-2/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-gestion-humana",
+  "name": "Especialización Universitaria en Gestión Humana",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 11338680,
+  "snies": "1647",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-gestion-humana/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-gestion-estrategica-de-mercadeo-2",
+  "name": "Especialización Universitaria en Gestión Estratégica de Mercadeo – Virtual",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Especialización",
+  "modality": "Virtual",
+  "price_cop": 9815760,
+  "snies": "110366",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-gestion-estrategica-de-mercadeo-2/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-gestion-estrategica-de-mercadeo",
+  "name": "Especialización Universitaria en Gestión Estratégica de Mercadeo",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 11338680,
+  "snies": "3062",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-gestion-estrategica-de-mercadeo/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-direccion-de-empresas",
+  "name": "Especialización Universitaria en Dirección de Empresas",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 12381930,
+  "snies": "1646",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-direccion-de-empresas/"
+ },
+ {
+  "slug": "maestria-en-neurociencia-para-las-organizaciones",
+  "name": "Maestría en Neurociencia para las Organizaciones",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 11201280,
+  "snies": "116277",
+  "url": "https://unab.edu.co/programas/maestria-en-neurociencia-para-las-organizaciones/"
+ },
+ {
+  "slug": "maestria-en-negocios-digitales",
+  "name": "Maestría en Negocios Digitales",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 10536200,
+  "snies": "105593",
+  "url": "https://unab.edu.co/programas/maestria-en-negocios-digitales/"
+ },
+ {
+  "slug": "maestria-en-gerencia-educativa-dual",
+  "name": "Maestría en Gerencia Educativa – Dual",
+  "faculty": "Facultad de Economía y Negocios; Posgrados sector educación",
+  "level": "Maestría",
+  "modality": "dual",
+  "price_cop": 8911700,
+  "snies": "109435",
+  "url": "https://unab.edu.co/programas/maestria-en-gerencia-educativa-dual/"
+ },
+ {
+  "slug": "maestria-en-finanzas",
+  "name": "Maestría en Finanzas",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 9084000,
+  "snies": "108398",
+  "url": "https://unab.edu.co/programas/maestria-en-finanzas/"
+ },
+ {
+  "slug": "maestria-en-administracion-y-direccion-de-empresas-mba",
+  "name": "Maestría en Administración y Dirección de Empresas (MBA)",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 15240500,
+  "snies": "106192",
+  "url": "https://unab.edu.co/programas/maestria-en-administracion-y-direccion-de-empresas-mba/"
+ },
+ {
+  "slug": "maestria-en-administracion-de-empresas",
+  "name": "Maestría en Administración de Empresas",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 11324940,
+  "snies": "103650",
+  "url": "https://unab.edu.co/programas/maestria-en-administracion-de-empresas/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-riesgos-financieros-y-mercados-de-derivados",
+  "name": "Especialización Universitaria en Riesgos Financieros y Mercados de Derivados",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 10885440,
+  "snies": "105453",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-riesgos-financieros-y-mercados-de-derivados/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-gerencia-de-recursos-energeticos",
+  "name": "Especialización Universitaria en Gerencia de Recursos Energéticos",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 10884720,
+  "snies": "8585",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-gerencia-de-recursos-energeticos/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-ciberseguridad-organizacional",
+  "name": "Especialización Universitaria en Ciberseguridad Organizacional",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Especialización",
+  "modality": "remota",
+  "price_cop": 10884720,
+  "snies": "108433",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-ciberseguridad-organizacional/"
+ },
+ {
+  "slug": "maestria-en-ingenieria-en-energia",
+  "name": "Maestría en Ingeniería en Energía",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 12245280,
+  "snies": "118934",
+  "url": "https://unab.edu.co/programas/maestria-en-ingenieria-en-energia/"
+ },
+ {
+  "slug": "maestria-en-gestion-aplicacion-y-desarrollo-de-software",
+  "name": "Maestría en Gestión, Aplicación y Desarrollo de Software",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 15565290,
+  "snies": "54946",
+  "url": "https://unab.edu.co/programas/maestria-en-gestion-aplicacion-y-desarrollo-de-software/"
+ },
+ {
+  "slug": "maestria-en-gerencia-de-proyectos-virtual",
+  "name": "Maestría en Gerencia de Proyectos – Virtual",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Maestría",
+  "modality": "Virtual",
+  "price_cop": 10401360,
+  "snies": "117982",
+  "url": "https://unab.edu.co/programas/maestria-en-gerencia-de-proyectos-virtual/"
+ },
+ {
+  "slug": "doctorado-en-ingenieria-convenio-en-red-uam-uao",
+  "name": "Doctorado en Ingeniería – Convenio en Red UAM – UAO",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Doctorado",
+  "modality": "presencial",
+  "price_cop": 18711000,
+  "snies": "105180",
+  "url": "https://unab.edu.co/programas/doctorado-en-ingenieria-convenio-en-red-uam-uao/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-produccion-y-gestion-de-proyectos-audiovisuales",
+  "name": "Especialización Universitaria en Producción y Gestión de Proyectos Audiovisuales",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Especialización",
+  "modality": "Virtual",
+  "price_cop": 6933080,
+  "snies": "109859",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-produccion-y-gestion-de-proyectos-audiovisuales/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-educacion-inclusiva",
+  "name": "Especialización Universitaria en Educación Inclusiva",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes; Posgrados sector educación",
+  "level": "Especialización",
+  "modality": null,
+  "price_cop": 6003250,
+  "snies": "106474",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-educacion-inclusiva/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-comunicacion-digital-y-medios-interactivos",
+  "name": "Especialización Universitaria en Comunicación Digital y Medios Interactivos",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Especialización",
+  "modality": "Virtual",
+  "price_cop": 7524530,
+  "snies": "105159",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-comunicacion-digital-y-medios-interactivos/"
+ },
+ {
+  "slug": "maestria-en-literatura-y-escrituras-creativas",
+  "name": "Maestría en Literatura y Escrituras Creativas",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Maestría",
+  "modality": "virtual",
+  "price_cop": 9523800,
+  "snies": "117981",
+  "url": "https://unab.edu.co/programas/maestria-en-literatura-y-escrituras-creativas/"
+ },
+ {
+  "slug": "maestria-en-educacion-virtual",
+  "name": "Maestría en Educación – Virtual",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes; Posgrados sector educación",
+  "level": "Maestría",
+  "modality": "virtual",
+  "price_cop": 8231160,
+  "snies": "115867",
+  "url": "https://unab.edu.co/programas/maestria-en-educacion-virtual/"
+ },
+ {
+  "slug": "maestria-en-educacion",
+  "name": "Maestría en Educación",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes; Posgrados sector educación",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 8968200,
+  "snies": "102173",
+  "url": "https://unab.edu.co/programas/maestria-en-educacion/"
+ },
+ {
+  "slug": "doctorado-en-educacion",
+  "name": "Doctorado en Educación",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes; Posgrados sector educación",
+  "level": "Doctorado",
+  "modality": null,
+  "price_cop": 14043120,
+  "snies": "116291",
+  "url": "https://unab.edu.co/programas/doctorado-en-educacion/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-publico-convenio-unisangil-yopal",
+  "name": "Especialización Universitaria en Derecho Público – Convenio Unisangil – Yopal",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9512760,
+  "snies": "111547",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-publico-convenio-unisangil-yopal/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-publico",
+  "name": "Especialización Universitaria en Derecho Público",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9512760,
+  "snies": "9317",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-publico/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-procesal-civil",
+  "name": "Especialización Universitaria en Derecho Procesal Civil",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9526330,
+  "snies": "9319",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-procesal-civil/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-penal-convenio-unisangil-yopal",
+  "name": "Especialización Universitaria en Derecho Penal – Convenio Unisangil Yopal",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9517400,
+  "snies": "9315",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-penal-convenio-unisangil-yopal/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-penal",
+  "name": "Especialización Universitaria en Derecho Penal",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9517400,
+  "snies": "9315",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-penal/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-disciplinario",
+  "name": "Especialización Universitaria en Derecho Disciplinario",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9517800,
+  "snies": "106075",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-disciplinario/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-de-familia",
+  "name": "Especialización Universitaria en Derecho de Familia",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9500370,
+  "snies": "9318",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-de-familia/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-comercial",
+  "name": "Especialización Universitaria en Derecho Comercial",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9512760,
+  "snies": "1644",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-comercial/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-derecho-administrativo",
+  "name": "Especialización Universitaria en Derecho Administrativo – Universidad del Rosario",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 11160000,
+  "snies": "1323",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-derecho-administrativo/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-contratacion-estatal",
+  "name": "Especialización Universitaria en Contratación Estatal",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 9517400,
+  "snies": "109348",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-contratacion-estatal/"
+ },
+ {
+  "slug": "maestria-en-prevencion-de-la-violencia-en-ninez-y-adolescencia",
+  "name": "Maestría en Prevención de la Violencia en Niñez y Adolescencia",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas; Posgrados sector educación",
+  "level": "Maestría",
+  "modality": "Presencial asistida con tecnologías con 3 materias en modalidad virtual con masterclass: Justicia Familiar, Violencia en Redes Sociales y Educación, Género y Políticas de Igualdad en la Escuela. El curso de Justicia Familiar está certificado por la UNAB.",
+  "price_cop": 7550520,
+  "snies": "116790",
+  "url": "https://unab.edu.co/programas/maestria-en-prevencion-de-la-violencia-en-ninez-y-adolescencia/"
+ },
+ {
+  "slug": "maestria-en-politicas-publicas-y-desarrollo",
+  "name": "Maestría en Políticas Públicas y Desarrollo",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 11485300,
+  "snies": "104648",
+  "url": "https://unab.edu.co/programas/maestria-en-politicas-publicas-y-desarrollo/"
+ },
+ {
+  "slug": "maestria-en-derecho-de-familia",
+  "name": "Maestría en Derecho de Familia",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 16884720,
+  "snies": "54640",
+  "url": "https://unab.edu.co/programas/maestria-en-derecho-de-familia/"
+ },
+ {
+  "slug": "maestria-en-derecho",
+  "name": "Maestría en Derecho",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Maestría",
+  "modality": "presencial",
+  "price_cop": 14208750,
+  "snies": "108876",
+  "url": "https://unab.edu.co/programas/maestria-en-derecho/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-seguridad-y-salud-en-el-trabajo",
+  "name": "Especialización Universitaria en Seguridad y Salud en el Trabajo",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "Virtual",
+  "price_cop": 5661810,
+  "snies": "106419",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-seguridad-y-salud-en-el-trabajo/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-psicologia-clinica-y-de-la-salud",
+  "name": "Especialización Universitaria en Psicología Clínica y de la Salud",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 11627640,
+  "snies": "52201",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-psicologia-clinica-y-de-la-salud/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-epidemiologia",
+  "name": "Especialización Universitaria en Epidemiología – Virtual",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "Virtual",
+  "price_cop": 12031760,
+  "snies": "102230",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-epidemiologia/"
+ },
+ {
+  "slug": "especializacion-en-enfermeria-neonatal",
+  "name": "Especialización Universitaria en Enfermería Neonatal",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 10603190,
+  "snies": "111045",
+  "url": "https://unab.edu.co/programas/especializacion-en-enfermeria-neonatal/"
+ },
+ {
+  "slug": "especializacion-universitaria-en-auditoria-en-salud-convenio-universidad-ces",
+  "name": "Especialización Universitaria en Auditoría en Salud – Convenio Universidad CES",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 22053600,
+  "snies": "7315",
+  "url": "https://unab.edu.co/programas/especializacion-universitaria-en-auditoria-en-salud-convenio-universidad-ces/"
+ },
+ {
+  "slug": "especializacion-en-radiologia-intervencionista",
+  "name": "Especialización en Radiología Intervencionista",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 29346950,
+  "snies": "106683",
+  "url": "https://unab.edu.co/programas/especializacion-en-radiologia-intervencionista/"
+ },
+ {
+  "slug": "especializacion-en-radiologia-e-imagenes-diagnosticas",
+  "name": "Especialización en Radiología e Imágenes Diagnósticas",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 29346950,
+  "snies": "3809",
+  "url": "https://unab.edu.co/programas/especializacion-en-radiologia-e-imagenes-diagnosticas/"
+ },
+ {
+  "slug": "especializacion-en-ortopedia-y-traumatologia",
+  "name": "Especialización en Ortopedia y Traumatología",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 29346950,
+  "snies": "106943",
+  "url": "https://unab.edu.co/programas/especializacion-en-ortopedia-y-traumatologia/"
+ },
+ {
+  "slug": "especializacion-en-oftalmologia",
+  "name": "Especialización en Oftalmología",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 29346950,
+  "snies": "91040",
+  "url": "https://unab.edu.co/programas/especializacion-en-oftalmologia/"
+ },
+ {
+  "slug": "especializacion-en-medicina-nuclear",
+  "name": "Especialización en Medicina Nuclear",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 27531310,
+  "snies": "104629",
+  "url": "https://unab.edu.co/programas/especializacion-en-medicina-nuclear/"
+ },
+ {
+  "slug": "especializacion-en-medicina-interna",
+  "name": "Especialización en Medicina Interna",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 30709510,
+  "snies": "91106",
+  "url": "https://unab.edu.co/programas/especializacion-en-medicina-interna/"
+ },
+ {
+  "slug": "especializacion-en-medicina-familiar",
+  "name": "Especialización en Medicina Familiar",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 18697100,
+  "snies": "111253",
+  "url": "https://unab.edu.co/programas/especializacion-en-medicina-familiar/"
+ },
+ {
+  "slug": "especializacion-en-medicina-critica-y-cuidado-intensivo",
+  "name": "Especialización en Medicina Crítica y Cuidado Intensivo",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 27531310,
+  "snies": "117622",
+  "url": "https://unab.edu.co/programas/especializacion-en-medicina-critica-y-cuidado-intensivo/"
+ },
+ {
+  "slug": "especializacion-en-ginecologia-y-obstetricia",
+  "name": "Especialización en Ginecología y Obstetricia",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "Presencial",
+  "price_cop": 29346950,
+  "snies": "105157",
+  "url": "https://unab.edu.co/programas/especializacion-en-ginecologia-y-obstetricia/"
+ },
+ {
+  "slug": "especializacion-en-dermatologia",
+  "name": "Especialización en Dermatología",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 30709510,
+  "snies": "53950",
+  "url": "https://unab.edu.co/programas/especializacion-en-dermatologia/"
+ },
+ {
+  "slug": "especializacion-en-anestesiologia",
+  "name": "Especialización en Anestesiología",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Especialización",
+  "modality": "presencial",
+  "price_cop": 30709500,
+  "snies": "91107",
+  "url": "https://unab.edu.co/programas/especializacion-en-anestesiologia/"
+ },
+ {
+  "slug": "maestria-en-salud-publica",
+  "name": "Maestría en Salud Pública",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Maestría",
+  "modality": "Presencial",
+  "price_cop": 11640420,
+  "snies": "109033",
+  "url": "https://unab.edu.co/programas/maestria-en-salud-publica/"
+ },
+ {
+  "slug": "maestria-en-salud-basada-en-evidencia",
+  "name": "Maestría en Salud Basada en Evidencia",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Maestría",
+  "modality": "Híbrida (virtual y presencial)",
+  "price_cop": 11917290,
+  "snies": "118478",
+  "url": "https://unab.edu.co/programas/maestria-en-salud-basada-en-evidencia/"
+ },
+ {
+  "slug": "literatura-virtual",
+  "name": "Literatura – Virtual",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Profesional",
+  "modality": "Virtual",
+  "price_cop": 4276160,
+  "snies": "19312",
+  "url": "https://unab.edu.co/programas/literatura-virtual/"
+ },
+ {
+  "slug": "musica",
+  "name": "Música",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7730640,
+  "snies": "2935",
+  "url": "https://unab.edu.co/programas/musica/"
+ },
+ {
+  "slug": "gastronomia-y-alta-cocina",
+  "name": "Gastronomía y Alta Cocina",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 9666370,
+  "snies": "104110",
+  "url": "https://unab.edu.co/programas/gastronomia-y-alta-cocina/"
+ },
+ {
+  "slug": "comunicacion-social",
+  "name": "Comunicación Social",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 8355360,
+  "snies": "54067",
+  "url": "https://unab.edu.co/programas/comunicacion-social/"
+ },
+ {
+  "slug": "artes-audiovisuales",
+  "name": "Artes Audiovisuales",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 9904860,
+  "snies": "15577",
+  "url": "https://unab.edu.co/programas/artes-audiovisuales/"
+ },
+ {
+  "slug": "contaduria-publica-virtual",
+  "name": "Contaduría Pública – Virtual",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Virtual",
+  "price_cop": 2965280,
+  "snies": "116362",
+  "url": "https://unab.edu.co/programas/contaduria-publica-virtual/"
+ },
+ {
+  "slug": "contaduria-publica",
+  "name": "Contaduría Pública",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 3904320,
+  "snies": "1642",
+  "url": "https://unab.edu.co/programas/contaduria-publica/"
+ },
+ {
+  "slug": "administracion-de-empresas-virtual",
+  "name": "Administración de Empresas – Virtual",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Virtual",
+  "price_cop": 2965280,
+  "snies": "51809",
+  "url": "https://unab.edu.co/programas/administracion-de-empresas-virtual/"
+ },
+ {
+  "slug": "administracion-de-empresas-dual",
+  "name": "Administración de Empresas – Dual",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Dual",
+  "price_cop": 8355360,
+  "snies": "19259",
+  "url": "https://unab.edu.co/programas/administracion-de-empresas-dual/"
+ },
+ {
+  "slug": "ingenieria-en-energia-y-sostenibilidad",
+  "name": "Ingeniería en Energía y Sostenibilidad",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Profesional",
+  "modality": "Presencial**",
+  "price_cop": 7262080,
+  "snies": "115974",
+  "url": "https://unab.edu.co/programas/ingenieria-en-energia-y-sostenibilidad/"
+ },
+ {
+  "slug": "ingenieria-financiera",
+  "name": "Ingeniería Financiera",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Programa",
+  "modality": null,
+  "price_cop": null,
+  "snies": null,
+  "url": "https://unab.edu.co/programas/ingenieria-financiera/"
+ },
+ {
+  "slug": "ingenieria-mecatronica",
+  "name": "Ingeniería Mecatrónica",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7886720,
+  "snies": "7731",
+  "url": "https://unab.edu.co/programas/ingenieria-mecatronica/"
+ },
+ {
+  "slug": "ingenieria-biomedica",
+  "name": "Ingeniería Biomédica",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Profesional",
+  "modality": "Presencial**",
+  "price_cop": 9773100,
+  "snies": "104793",
+  "url": "https://unab.edu.co/programas/ingenieria-biomedica/"
+ },
+ {
+  "slug": "seguridad-y-salud-en-el-trabajo",
+  "name": "Pregrado en Seguridad y Salud en el Trabajo",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Profesional",
+  "modality": "Virtual",
+  "price_cop": 3569250,
+  "snies": "108592",
+  "url": "https://unab.edu.co/programas/seguridad-y-salud-en-el-trabajo/"
+ },
+ {
+  "slug": "negocios-internacionales",
+  "name": "Negocios Internacionales",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7390880,
+  "snies": "101878",
+  "url": "https://unab.edu.co/programas/negocios-internacionales/"
+ },
+ {
+  "slug": "economia",
+  "name": "Economía",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 6197580,
+  "snies": "20638",
+  "url": "https://unab.edu.co/programas/economia/"
+ },
+ {
+  "slug": "administracion-de-empresas",
+  "name": "Administración de Empresas",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 8355360,
+  "snies": "1641",
+  "url": "https://unab.edu.co/programas/administracion-de-empresas/"
+ },
+ {
+  "slug": "licenciatura-en-educacion-infantil",
+  "name": "Licenciatura en Educación Infantil",
+  "faculty": "Facultad de Ciencias Sociales, Humanidades y Artes",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 4509720,
+  "snies": "105775",
+  "url": "https://unab.edu.co/programas/licenciatura-en-educacion-infantil/"
+ },
+ {
+  "slug": "marketing",
+  "name": "Marketing",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 6222680,
+  "snies": "115975",
+  "url": "https://unab.edu.co/programas/marketing/"
+ },
+ {
+  "slug": "ingenieria-industrial",
+  "name": "Ingeniería Industrial",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7265700,
+  "snies": "106109",
+  "url": "https://unab.edu.co/programas/ingenieria-industrial/"
+ },
+ {
+  "slug": "ingenieria-de-sistemas",
+  "name": "Ingeniería de Sistemas",
+  "faculty": "Facultad de Ingeniería",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7554880,
+  "snies": "1643",
+  "url": "https://unab.edu.co/programas/ingenieria-de-sistemas/"
+ },
+ {
+  "slug": "maestria-en-gerencia-publica-e-innovacion-politica",
+  "name": "Maestría en Gerencia Pública e Innovación Política",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Maestría",
+  "modality": "virtual",
+  "price_cop": 10637640,
+  "snies": "117773",
+  "url": "https://unab.edu.co/programas/maestria-en-gerencia-publica-e-innovacion-politica/"
+ },
+ {
+  "slug": "doctorado-en-sostenibilidad",
+  "name": "Doctorado en Sostenibilidad – Convenio en Red UAM – UAO – UTB",
+  "faculty": "Facultad de Economía y Negocios",
+  "level": "Doctorado",
+  "modality": "presencial",
+  "price_cop": 12958000,
+  "snies": "111083",
+  "url": "https://unab.edu.co/programas/doctorado-en-sostenibilidad/"
+ },
+ {
+  "slug": "derecho",
+  "name": "Derecho",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 6774080,
+  "snies": "1640",
+  "url": "https://unab.edu.co/programas/derecho/"
+ },
+ {
+  "slug": "maestria-en-ciencias-biomedicas",
+  "name": "Maestría en Ciencias Biomédicas",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Maestría",
+  "modality": "Virtual",
+  "price_cop": 10796390,
+  "snies": "110468",
+  "url": "https://unab.edu.co/programas/maestria-en-ciencias-biomedicas/"
+ },
+ {
+  "slug": "tecnologia-en-marketing-virtual",
+  "name": "Marketing – Virtual",
+  "faculty": "UNAB Tec",
+  "level": "Tecnología",
+  "modality": "Virtual",
+  "price_cop": 2525920,
+  "snies": "117339",
+  "url": "https://unab.edu.co/programas/tecnologia-en-marketing-virtual/"
+ },
+ {
+  "slug": "tecnologia-en-seguridad-y-salud-en-el-trabajo",
+  "name": "Seguridad y Salud en el Trabajo",
+  "faculty": "UNAB Tec",
+  "level": "Tecnología",
+  "modality": "Virtual",
+  "price_cop": 2659800,
+  "snies": "104978",
+  "url": "https://unab.edu.co/programas/tecnologia-en-seguridad-y-salud-en-el-trabajo/"
+ },
+ {
+  "slug": "tecnologia-en-regencia-de-farmacia-2",
+  "name": "Regencia de Farmacia",
+  "faculty": "UNAB Tec",
+  "level": "Tecnología",
+  "modality": "Virtual*",
+  "price_cop": 3166560,
+  "snies": "90873",
+  "url": "https://unab.edu.co/programas/tecnologia-en-regencia-de-farmacia-2/"
+ },
+ {
+  "slug": "tecnologia-en-investigacion-y-ciencias-forenses",
+  "name": "Investigación Criminal y Ciencias Forenses",
+  "faculty": "UNAB Tec",
+  "level": "Tecnología",
+  "modality": "Presencial**",
+  "price_cop": 2800480,
+  "snies": "53525",
+  "url": "https://unab.edu.co/programas/tecnologia-en-investigacion-y-ciencias-forenses/"
+ },
+ {
+  "slug": "tecnologia-en-gestion-humana",
+  "name": "Gestión Humana",
+  "faculty": "UNAB Tec",
+  "level": "Tecnología",
+  "modality": "Dual**",
+  "price_cop": 2411450,
+  "snies": "109466",
+  "url": "https://unab.edu.co/programas/tecnologia-en-gestion-humana/"
+ },
+ {
+  "slug": "doctorado-en-derecho",
+  "name": "Doctorado en Derecho",
+  "faculty": "Facultad de Ciencias Jurídicas y Políticas",
+  "level": "Doctorado",
+  "modality": "Presencial",
+  "price_cop": 12691000,
+  "snies": "116843",
+  "url": "https://unab.edu.co/programas/doctorado-en-derecho/"
+ },
+ {
+  "slug": "tecnologia-en-gestion-gastronomica",
+  "name": "Gestión Gastronómica",
+  "faculty": "UNAB Tec",
+  "level": "Tecnología",
+  "modality": "Dual – virtual",
+  "price_cop": 4477540,
+  "snies": "54446",
+  "url": "https://unab.edu.co/programas/tecnologia-en-gestion-gastronomica/"
+ },
+ {
+  "slug": "psicologia",
+  "name": "Psicología",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 8283040,
+  "snies": "2689",
+  "url": "https://unab.edu.co/programas/psicologia/"
+ },
+ {
+  "slug": "enfermeria",
+  "name": "Enfermería",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 7379100,
+  "snies": "52416",
+  "url": "https://unab.edu.co/programas/enfermeria/"
+ },
+ {
+  "slug": "medicina",
+  "name": "Medicina",
+  "faculty": "Facultad de Ciencias de la Salud",
+  "level": "Profesional",
+  "modality": "Presencial",
+  "price_cop": 27012811,
+  "snies": "3488",
+  "url": "https://unab.edu.co/programas/medicina/"
+ },
+ {
+  "slug": "tecnologia-en-marketing",
+  "name": "Marketing",
+  "faculty": "UNAB Tec",
+  "level": "Tecnología",
+  "modality": "Presencial",
+  "price_cop": 2525920,
+  "snies": "117338",
+  "url": "https://unab.edu.co/programas/tecnologia-en-marketing/"
+ }
+]
