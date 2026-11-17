@@ -6,18 +6,26 @@ import co.edu.unab.unabgo.backend.database.DatabaseFactory
 import co.edu.unab.unabgo.backend.http.controllers.AdminUserController
 import co.edu.unab.unabgo.backend.http.controllers.AnnouncementController
 import co.edu.unab.unabgo.backend.http.controllers.AuthController
+import co.edu.unab.unabgo.backend.http.controllers.BanuController
 import co.edu.unab.unabgo.backend.http.controllers.BusController
 import co.edu.unab.unabgo.backend.http.controllers.FaqController
+import co.edu.unab.unabgo.backend.http.controllers.GpsWebhookController
 import co.edu.unab.unabgo.backend.http.controllers.HealthController
+import co.edu.unab.unabgo.backend.http.controllers.ProfessorController
+import co.edu.unab.unabgo.backend.http.controllers.StudyPlanController
 import co.edu.unab.unabgo.backend.http.controllers.ProgramController
+import co.edu.unab.unabgo.backend.http.controllers.ScheduleController
 import co.edu.unab.unabgo.backend.http.controllers.SubjectController
 import co.edu.unab.unabgo.backend.http.installErrorHandling
 import co.edu.unab.unabgo.backend.http.routes.AUTH_API
 import co.edu.unab.unabgo.backend.http.routes.Controllers
 import co.edu.unab.unabgo.backend.http.routes.apiRoutes
 import co.edu.unab.unabgo.backend.services.AnnouncementService
-import co.edu.unab.unabgo.backend.services.integrations.LogPushNotifier
-import co.edu.unab.unabgo.backend.services.integrations.PushNotifier
+import co.edu.unab.unabgo.backend.services.BanuService
+import co.edu.unab.unabgo.backend.services.BusLiveService
+import co.edu.unab.unabgo.backend.services.GpsWebhookStore
+import co.edu.unab.unabgo.backend.services.RateLimiter
+import co.edu.unab.unabgo.backend.services.integrations.Integrations
 import io.ktor.serialization.kotlinx.json.json
 import io.ktor.server.application.Application
 import io.ktor.server.application.install
@@ -54,8 +62,11 @@ fun main() {
     embeddedServer(Netty, port = config.port, host = "0.0.0.0") { module(config) }.start(wait = true)
 }
 
-/** Arma la aplicación: plugins, autenticación por token y rutas. Las pruebas la usan con otra base. */
-fun Application.module(config: AppConfig, push: PushNotifier = LogPushNotifier()) {
+/**
+ * Arma la aplicación: plugins, autenticación por token y rutas. Las integraciones externas se inyectan:
+ * en producción salen del .env y las pruebas pasan versiones con MockEngine.
+ */
+fun Application.module(config: AppConfig, integrations: Integrations = Integrations.from(config)) {
     val tokens = TokenService(Duration.ofDays(config.tokenTtlDays))
 
     install(DefaultHeaders) { header("X-Content-Type-Options", "nosniff") }
@@ -70,15 +81,21 @@ fun Application.module(config: AppConfig, push: PushNotifier = LogPushNotifier()
         }
     }
 
+    val webhookStore = GpsWebhookStore()
     val controllers = Controllers(
         health = HealthController(),
-        auth = AuthController(tokens),
+        auth = AuthController(tokens, integrations.tokenVerifier),
         subjects = SubjectController(),
+        schedule = ScheduleController(),
         programs = ProgramController(),
-        bus = BusController(),
-        announcements = AnnouncementController(AnnouncementService(push)),
+        bus = BusController(BusLiveService(integrations.gpsFeed, webhookStore)),
+        announcements = AnnouncementController(AnnouncementService(integrations.push)),
         faqs = FaqController(),
-        admin = AdminUserController()
+        admin = AdminUserController(integrations.unabWeb),
+        banu = BanuController(BanuService(integrations.llm), RateLimiter(config.banuRateLimitPerMinute)),
+        webhooks = GpsWebhookController(config, webhookStore),
+        professors = ProfessorController(),
+        studyPlans = StudyPlanController()
     )
     routing { apiRoutes(controllers) }
 }

@@ -1,0 +1,39 @@
+# Compilación
+build/
+out/
+**/build/
+.gradle/
+.kotlin/
+
+# IDE
+.idea/
+*.iml
+
+# Configuración local y secretos
+.env
+local.properties
+*.pem
+*.jks
+*.keystore
+
+# Base de datos local (H2)
+data/
+*.log
+
+# Android
+.cxx/
+captures/
+*.apk
+*.aab
+*.hprof
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Documentos de las entregas (Word, PDF y presentaciones): se guardan en documentos/ y no se suben
+documentos/
+/*.docx
+/*.pdf
+/*.pptx
+~$*

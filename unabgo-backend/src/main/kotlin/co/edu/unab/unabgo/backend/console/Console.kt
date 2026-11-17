@@ -16,11 +16,15 @@ import co.edu.unab.unabgo.backend.database.FavoriteRoutes
 import co.edu.unab.unabgo.backend.database.Faqs
 import co.edu.unab.unabgo.backend.database.GradeCategories
 import co.edu.unab.unabgo.backend.database.GradeItems
+import co.edu.unab.unabgo.backend.database.PlanCourses
+import co.edu.unab.unabgo.backend.database.PlanSemesters
+import co.edu.unab.unabgo.backend.database.Professors
 import co.edu.unab.unabgo.backend.database.Programs
 import co.edu.unab.unabgo.backend.database.Roles
 import co.edu.unab.unabgo.backend.database.RouteStops
 import co.edu.unab.unabgo.backend.database.ScheduleBlocks
 import co.edu.unab.unabgo.backend.database.StudentProfiles
+import co.edu.unab.unabgo.backend.database.StudyPlans
 import co.edu.unab.unabgo.backend.database.Subjects
 import co.edu.unab.unabgo.backend.database.Users
 import co.edu.unab.unabgo.backend.database.seeders.DatabaseSeeder
@@ -64,6 +68,7 @@ private fun seed(db: AppDatabase) {
 fun countRows(db: AppDatabase): Map<String, Long> = transaction(db.database) {
     listOf(
         Roles, Users, StudentProfiles, AccessTokens, Programs, Subjects, ScheduleBlocks, GradeCategories,
-        GradeItems, BusRoutes, BusStops, RouteStops, FavoriteRoutes, Announcements, Faqs
+        GradeItems, BusRoutes, BusStops, RouteStops, FavoriteRoutes, Announcements, Faqs, Professors,
+        StudyPlans, PlanSemesters, PlanCourses
     ).associate { it.tableName to it.selectAll().count() }
 }

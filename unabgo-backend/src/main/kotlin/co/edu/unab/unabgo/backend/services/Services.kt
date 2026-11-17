@@ -5,20 +5,26 @@ package co.edu.unab.unabgo.backend.services
 import co.edu.unab.unabgo.backend.auth.PasswordHasher
 import co.edu.unab.unabgo.backend.auth.TokenService
 import co.edu.unab.unabgo.backend.auth.UserRole
+import co.edu.unab.unabgo.backend.database.Users
 import co.edu.unab.unabgo.backend.http.ConflictException
+import co.edu.unab.unabgo.backend.http.ForbiddenException
 import co.edu.unab.unabgo.backend.http.UnauthorizedException
 import co.edu.unab.unabgo.backend.http.ValidationException
 import co.edu.unab.unabgo.backend.http.Validator
 import co.edu.unab.unabgo.backend.http.requests.LoginRequest
 import co.edu.unab.unabgo.backend.http.requests.RegisterRequest
 import co.edu.unab.unabgo.backend.http.requests.ScheduleBlockInput
+import co.edu.unab.unabgo.backend.http.resources.NextClassResource
 import co.edu.unab.unabgo.backend.models.Announcement
+import co.edu.unab.unabgo.backend.models.Program
 import co.edu.unab.unabgo.backend.models.Role
 import co.edu.unab.unabgo.backend.models.ScheduleBlock
 import co.edu.unab.unabgo.backend.models.StudentProfile
 import co.edu.unab.unabgo.backend.models.Subject
 import co.edu.unab.unabgo.backend.models.User
+import co.edu.unab.unabgo.backend.services.integrations.GoogleIdentity
 import co.edu.unab.unabgo.backend.services.integrations.PushNotifier
+import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
 import java.time.Instant
 import java.time.LocalTime
 import java.time.temporal.ChronoUnit
@@ -39,7 +45,15 @@ class AuthService(private val tokens: TokenService) {
             createdAt = now
             updatedAt = now
         }
-        StudentProfile.new { this.user = user }
+        val program = request.programId?.let {
+            Program.findById(it) ?: throw ValidationException(mapOf("program_id" to "La carrera elegida no existe."))
+        }
+        StudentProfile.new {
+            this.user = user
+            this.program = program
+            request.semester?.let { semester = it.toShort() }
+            request.language?.let { language = it }
+        }
         return user to tokens.issue(user, request.deviceName ?: "app")
     }
 
@@ -50,6 +64,29 @@ class AuthService(private val tokens: TokenService) {
         }
         if (!user.active) throw UnauthorizedException("La cuenta está desactivada.")
         return user to tokens.issue(user, request.deviceName ?: "app")
+    }
+
+    /**
+     * Inicio de sesión con Google (Firebase): solo correos @unab.edu.co. Si ya existe una cuenta con ese correo
+     * se enlaza con el uid de Google; si no, se crea un estudiante sin contraseña.
+     */
+    fun loginWithGoogle(identity: GoogleIdentity, deviceName: String?): Pair<User, TokenService.IssuedToken> {
+        if (!identity.emailVerified) throw ForbiddenException("Google no verificó este correo.")
+        if (!identity.email.endsWith("@unab.edu.co")) throw ForbiddenException("Solo pueden ingresar cuentas institucionales @unab.edu.co.")
+        val now = Instant.now().truncatedTo(ChronoUnit.SECONDS)
+        val user = User.find { Users.googleUid eq identity.uid }.singleOrNull() ?: User.findByEmail(identity.email)?.also { it.googleUid = identity.uid }
+            ?: User.new {
+                role = Role.of(UserRole.ESTUDIANTE)
+                name = (identity.name?.takeIf { it.isNotBlank() } ?: identity.email.substringBefore('@')).take(120)
+                email = identity.email
+                passwordHash = null
+                googleUid = identity.uid
+                active = true
+                createdAt = now
+                updatedAt = now
+            }.also { StudentProfile.new { this.user = it } }
+        if (!user.active) throw UnauthorizedException("La cuenta está desactivada.")
+        return user to tokens.issue(user, deviceName ?: "google")
     }
 }
 
@@ -78,6 +115,40 @@ object ScheduleService {
         if (errors.isNotEmpty()) throw ValidationException(errors)
     }
 
+    /** Zona horaria del campus: los bloques del horario se guardan en hora local de Bucaramanga. */
+    val CAMPUS_ZONE: java.time.ZoneId = java.time.ZoneId.of("America/Bogota")
+
+    /**
+     * Próxima clase del estudiante a partir de [now] (hora local del campus). Si hay una clase en curso, esa es la
+     * próxima; si ya pasaron todas las de la semana, devuelve la primera de la semana siguiente. Null si no tiene bloques.
+     */
+    fun nextClass(owner: User, now: java.time.LocalDateTime): NextClassResource? {
+        val blocks = owner.subjects.flatMap { s -> s.blocks.map { s to it } }
+        if (blocks.isEmpty()) return null
+        val candidates = (0..7).flatMap { offset ->
+            val date = now.toLocalDate().plusDays(offset.toLong())
+            blocks.filter { (_, b) -> b.dayOfWeek.toInt() == date.dayOfWeek.value }
+                .map { (s, b) -> Triple(s, b, date.atTime(b.startTime)) }
+                .filter { (_, b, start) -> offset > 0 || date.atTime(b.endTime) > now || start > now }
+        }
+        val (subject, block, start) = candidates.minByOrNull { it.third } ?: return null
+        val minutes = java.time.Duration.between(now, start).toMinutes()
+        return NextClassResource(
+            subjectId = subject.id.value,
+            subjectName = subject.name,
+            color = subject.color,
+            teacher = subject.teacher,
+            blockId = block.id.value,
+            date = start.toLocalDate().toString(),
+            dayOfWeek = block.dayOfWeek.toInt(),
+            startTime = block.startTime.toString(),
+            endTime = block.endTime.toString(),
+            room = block.room,
+            inProgress = start <= now,
+            startsInMinutes = minutes.coerceAtLeast(0)
+        )
+    }
+
     fun replaceBlocks(subject: Subject, blocks: List<ScheduleBlockInput>) {
         subject.blocks.forEach { it.delete() }
         blocks.forEach { b ->
@@ -92,10 +163,10 @@ object ScheduleService {
     }
 }
 
-/** Avisos: al publicarse se envía una sola notificación push (Firebase Cloud Messaging en la entrega 3). */
+/** Avisos: al publicarse se envía una sola notificación push (Firebase Cloud Messaging). */
 class AnnouncementService(private val push: PushNotifier) {
 
-    fun publishIfNeeded(announcement: Announcement, publish: Boolean) {
+    suspend fun publishIfNeeded(announcement: Announcement, publish: Boolean) {
         if (!publish || announcement.publishedAt != null) return
         val now = Instant.now().truncatedTo(ChronoUnit.SECONDS)
         announcement.publishedAt = now

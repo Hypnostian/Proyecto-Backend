@@ -10,12 +10,17 @@ import co.edu.unab.unabgo.backend.database.factories.Factories
 import co.edu.unab.unabgo.backend.models.BusRoute
 import co.edu.unab.unabgo.backend.models.BusStop
 import co.edu.unab.unabgo.backend.models.Faq
+import co.edu.unab.unabgo.backend.models.PlanCourse
+import co.edu.unab.unabgo.backend.models.PlanSemester
+import co.edu.unab.unabgo.backend.models.Professor
 import co.edu.unab.unabgo.backend.models.Program
 import co.edu.unab.unabgo.backend.models.Role
+import co.edu.unab.unabgo.backend.models.StudyPlan
 import co.edu.unab.unabgo.backend.models.User
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
 import org.jetbrains.exposed.sql.insert
+import org.slf4j.LoggerFactory
 import org.jetbrains.exposed.sql.transactions.transaction
 import java.math.BigDecimal
 import java.time.Instant
@@ -39,6 +44,8 @@ class DatabaseSeeder(private val factories: Factories = Factories()) : Seeder {
             BusSeeder(factories).run()
             AcademicSeeder(factories).run()
             ContentSeeder(factories).run()
+            ProfessorSeeder().run()
+            StudyPlanSeeder().run()
         }
     }
 }
@@ -194,6 +201,124 @@ class ContentSeeder(private val f: Factories) : Seeder {
                 updatedAt = now
             }
         }
+    }
+}
+
+/**
+ * Profesores reales con datos públicos de APOLO (apolo.unab.edu.co). Lee seed/professors.json; si el archivo
+ * todavía no existe se omite sin error (se genera con scripts/convert_professors.py, ver el README).
+ */
+class ProfessorSeeder : Seeder {
+    @Serializable
+    private data class ProfessorSeed(
+        val slug: String? = null, val name: String, val title: String? = null, val unit: String? = null,
+        val unit_url: String? = null, val apolo_url: String, val cvlac_url: String? = null
+    )
+
+    override fun run() {
+        val text = Thread.currentThread().contextClassLoader.getResource("seed/professors.json")?.readText(Charsets.UTF_8)
+        if (text == null) {
+            LoggerFactory.getLogger("unabgo.seed").info("seed/professors.json no existe: se omite ProfessorSeeder.")
+            return
+        }
+        val usedSlugs = mutableSetOf<String>()
+        val usedUrls = mutableSetOf<String>()
+        seedJson.decodeFromString<List<ProfessorSeed>>(text).forEach { p ->
+            if (!usedUrls.add(p.apolo_url)) return@forEach
+            val base = (p.slug?.takeIf { it.isNotBlank() } ?: slugify(p.name)).take(150)
+            var slug = base
+            var n = 2
+            while (!usedSlugs.add(slug)) slug = "$base-${n++}"
+            Professor.new {
+                this.slug = slug
+                name = p.name.take(160)
+                title = p.title?.take(500)
+                unit = p.unit?.take(200)
+                unitUrl = p.unit_url?.take(300)
+                apoloUrl = p.apolo_url.take(300)
+                cvlacUrl = p.cvlac_url?.take(300)
+            }
+        }
+    }
+
+    companion object {
+        fun slugify(text: String): String = java.text.Normalizer.normalize(text.lowercase(), java.text.Normalizer.Form.NFD)
+            .replace("\\p{M}+".toRegex(), "").replace("[^a-z0-9]+".toRegex(), "-").trim('-')
+    }
+}
+
+/**
+ * Planes de estudio de los programas de la UNAB (unab.edu.co). Lee seed/study_plans.json; si el archivo todavía
+ * no existe se omite sin error (se genera con scripts/convert_study_plans.py, ver el README). Cada plan se vincula
+ * con su programa por el slug o por el nombre sin tildes ni signos.
+ */
+class StudyPlanSeeder : Seeder {
+    @Serializable
+    data class CourseSeed(val name: String, val credits: Int? = null)
+
+    @Serializable
+    data class SemesterSeed(val number: Int, val name: String, val credits: Int? = null, val courses: List<CourseSeed> = emptyList())
+
+    @Serializable
+    data class PlanSeed(
+        val slug: String, val program_name: String, val level: String? = null, val structure: String = "semestres",
+        val total_credits: Int? = null, val plan_url: String, val source_url: String? = null,
+        val semesters: List<SemesterSeed> = emptyList(), val text: String? = null
+    )
+
+    override fun run() {
+        val text = Thread.currentThread().contextClassLoader.getResource("seed/study_plans.json")?.readText(Charsets.UTF_8)
+        if (text == null) {
+            LoggerFactory.getLogger("unabgo.seed").info("seed/study_plans.json no existe: se omite StudyPlanSeeder.")
+            return
+        }
+        load(seedJson.decodeFromString(text))
+    }
+
+    /** Guarda los planes (dentro de una transacción) y devuelve cuántos quedaron. */
+    fun load(plans: List<PlanSeed>): Int {
+        val now = Instant.now().truncatedTo(ChronoUnit.SECONDS)
+        val programs = Program.all().toList()
+        val bySlug = programs.associateBy { it.slug }
+        val byName = programs.groupBy { StudyPlan.normalize(it.name) }
+        val usedSlugs = mutableSetOf<String>()
+        plans.forEach { p ->
+            val base = p.slug.take(150)
+            var slug = base
+            var n = 2
+            while (!usedSlugs.add(slug)) slug = "$base-${n++}"
+            val linked = bySlug[p.slug] ?: byName[StudyPlan.normalize(p.program_name)]?.singleOrNull()
+            val plan = StudyPlan.new {
+                this.slug = slug
+                programName = p.program_name.take(200)
+                searchName = StudyPlan.normalize(p.program_name).take(220)
+                level = (p.level ?: linked?.level)?.take(40)
+                structure = if (p.structure == "semestres" && p.semesters.isNotEmpty()) "semestres" else "texto"
+                totalCredits = p.total_credits
+                planUrl = p.plan_url.take(1000)
+                sourceUrl = (p.source_url ?: p.plan_url).take(300)
+                program = linked
+                planText = if (structure == "texto") p.text else null
+                updatedAt = now
+            }
+            if (plan.structure == "semestres") p.semesters.forEach { s ->
+                val semester = PlanSemester.new {
+                    this.plan = plan
+                    number = s.number.toShort()
+                    name = s.name.take(80)
+                    credits = s.credits
+                }
+                s.courses.forEachIndexed { i, c ->
+                    PlanCourse.new {
+                        this.semester = semester
+                        name = c.name.take(200)
+                        credits = c.credits
+                        sortOrder = i.toShort()
+                    }
+                }
+            }
+        }
+        return plans.size
     }
 }
 

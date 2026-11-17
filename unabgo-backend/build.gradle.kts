@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "co.edu.unab.unabgo"
-version = "0.2.0"
+version = "0.3.0"
 
 repositories {
     mavenCentral()
@@ -29,6 +29,10 @@ dependencies {
     implementation("io.ktor:ktor-server-status-pages:$ktor")
     implementation("io.ktor:ktor-server-call-logging:$ktor")
     implementation("io.ktor:ktor-server-default-headers:$ktor")
+
+    // Cliente HTTP para las APIs externas (solo se usa desde services/integrations)
+    implementation("io.ktor:ktor-client-core:$ktor")
+    implementation("io.ktor:ktor-client-cio:$ktor")
 
     // Persistencia: ORM, migraciones, pool de conexiones y motores
     implementation("org.jetbrains.exposed:exposed-core:$exposed")
@@ -50,6 +54,7 @@ dependencies {
     testImplementation(kotlin("test"))
     testImplementation("io.ktor:ktor-server-test-host:$ktor")
     testImplementation("io.ktor:ktor-client-content-negotiation:$ktor")
+    testImplementation("io.ktor:ktor-client-mock:$ktor")
 }
 
 java {

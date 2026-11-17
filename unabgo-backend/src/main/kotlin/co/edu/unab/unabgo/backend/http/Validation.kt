@@ -23,6 +23,9 @@ class Validator {
     fun maxLength(field: String, value: String?, max: Int) =
         rule(field, value == null || value.length <= max, "El campo $field admite máximo $max caracteres.")
 
+    fun minLength(field: String, value: String?, min: Int) =
+        rule(field, value == null || value.trim().length >= min, "El campo $field necesita mínimo $min caracteres.")
+
     fun between(field: String, value: Number?, min: Number, max: Number) =
         rule(field, value == null || value.toDouble() in min.toDouble()..max.toDouble(), "El campo $field debe estar entre $min y $max.")
 

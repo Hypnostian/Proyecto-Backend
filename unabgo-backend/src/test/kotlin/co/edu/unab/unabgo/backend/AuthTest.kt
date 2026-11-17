@@ -34,6 +34,38 @@ class AuthTest {
     }
 
     @Test
+    fun registroGuardaCarreraSemestreEIdiomaEnElPerfil() = apiTest(seed = true) {
+        val programId = client.getAuth("/api/v1/programs/ingenieria-de-sistemas").json().second.data()["id"]!!.jsonPrimitive.content
+        val (status, body) = client.postJson("/api/v1/auth/register",
+            """{"name":"Juan Pérez","email":"juan.perez@unab.edu.co","password":"clave2026","password_confirmation":"clave2026",
+               "program_id":$programId,"semester":6,"language":"en"}""").json()
+        assertEquals(201, status)
+        val token = body.data()["token"]!!.jsonPrimitive.content
+        // El perfil queda listo para mostrar solo el plan de la carrera elegida
+        val profile = client.getAuth("/api/v1/me", token).json().second.data()["profile"]!!.jsonObject
+        assertEquals(6, profile["semester"]!!.jsonPrimitive.content.toInt())
+        assertEquals("en", profile["language"]!!.jsonPrimitive.content)
+        val program = profile["program"]!!.jsonObject
+        assertEquals("Ingeniería de Sistemas", program["name"]!!.jsonPrimitive.content)
+        assertEquals("Profesional", program["level"]!!.jsonPrimitive.content)
+        assertEquals("ingenieria-de-sistemas", program["study_plan_slug"]!!.jsonPrimitive.content)
+    }
+
+    @Test
+    fun registroValidaCarreraSemestreEIdioma() = apiTest(seed = true) {
+        val (status, body) = client.postJson("/api/v1/auth/register",
+            """{"name":"Ana","email":"ana.b@unab.edu.co","password":"clave2026","password_confirmation":"clave2026","semester":13,"language":"de"}""").json()
+        assertEquals(400, status)
+        assertTrue(body["fields"]!!.jsonObject.keys.containsAll(listOf("semester", "language")))
+        val (status2, body2) = client.postJson("/api/v1/auth/register",
+            """{"name":"Ana","email":"ana.b@unab.edu.co","password":"clave2026","password_confirmation":"clave2026","program_id":999999}""").json()
+        assertEquals(400, status2)
+        assertTrue(body2["fields"]!!.jsonObject.containsKey("program_id"))
+        // Con la carrera inválida no queda ninguna cuenta a medias
+        assertEquals(401, client.postJson("/api/v1/auth/login", """{"email":"ana.b@unab.edu.co","password":"clave2026"}""").status.value)
+    }
+
+    @Test
     fun correoRepetidoEsConflicto() = apiTest(seed = true) {
         val response = client.postJson("/api/v1/auth/register",
             """{"name":"Otro","email":"${UserSeeder.STUDENT_EMAIL}","password":"clave2026","password_confirmation":"clave2026"}""")

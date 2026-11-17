@@ -5,10 +5,12 @@ import co.edu.unab.unabgo.backend.database.AppDatabase
 import co.edu.unab.unabgo.backend.database.DatabaseFactory
 import co.edu.unab.unabgo.backend.database.factories.Factories
 import co.edu.unab.unabgo.backend.database.seeders.DatabaseSeeder
+import co.edu.unab.unabgo.backend.services.integrations.Integrations
 import io.ktor.client.HttpClient
 import io.ktor.client.request.bearerAuth
 import io.ktor.client.request.delete
 import io.ktor.client.request.get
+import io.ktor.client.request.header
 import io.ktor.client.request.patch
 import io.ktor.client.request.post
 import io.ktor.client.request.put
@@ -43,9 +45,18 @@ object TestDb {
     }
 }
 
-fun apiTest(seed: Boolean = true, block: suspend ApplicationTestBuilder.() -> Unit) = testApplication {
+/**
+ * Prueba de la API completa con base H2 en memoria. Las integraciones externas no se crean desde el .env:
+ * cada prueba pasa las suyas (con MockEngine) y, si no pasa ninguna, todas quedan desactivadas.
+ */
+fun apiTest(
+    seed: Boolean = true,
+    config: AppConfig = TestDb.testConfig,
+    integrations: Integrations = Integrations(),
+    block: suspend ApplicationTestBuilder.() -> Unit
+) = testApplication {
     val db = TestDb.fresh(seed)
-    application { module(TestDb.testConfig) }
+    application { module(config, integrations) }
     try {
         block()
     } finally {
@@ -76,4 +87,18 @@ suspend fun ApplicationTestBuilder.tokenFor(email: String, password: String = Fa
     val (status, body) = client.postJson("/api/v1/auth/login", """{"email":"$email","password":"$password","device_name":"pruebas"}""").json()
     check(status == 200) { "login falló: $status $body" }
     return body["data"]!!.jsonObject["token"]!!.jsonPrimitive.content
+}
+
+/** Firma el cuerpo como lo haría el dispositivo a bordo (HMAC-SHA256 en hexadecimal). */
+suspend fun HttpClient.postSigned(path: String, body: String, signature: String?) = post(path) {
+    contentType(ContentType.Application.Json); setBody(body); signature?.let { header("X-Signature", it) }
+}
+
+fun JsonObject.data(): JsonObject = this["data"]!!.jsonObject
+
+/** Firma HMAC-SHA256 en hexadecimal, calculada aparte del código de producción. */
+fun signBody(secret: String, body: String): String {
+    val mac = javax.crypto.Mac.getInstance("HmacSHA256")
+    mac.init(javax.crypto.spec.SecretKeySpec(secret.toByteArray(), "HmacSHA256"))
+    return mac.doFinal(body.toByteArray()).joinToString("") { "%02x".format(it) }
 }

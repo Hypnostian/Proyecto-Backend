@@ -12,11 +12,26 @@ data class AppConfig(
     val dbUrl: String = DEFAULT_DB_URL,
     val dbUser: String = "sa",
     val dbPassword: String = "",
-    val tokenTtlDays: Long = 30
+    val tokenTtlDays: Long = 30,
+    // Servicios externos (entrega 3). Vacío = integración desactivada.
+    val gpsFeedUrl: String = "",
+    val gpsWebhookSecret: String = "",
+    val firebaseProjectId: String = "",
+    val firebaseCredentials: String = "",
+    val banuLlmUrl: String = "",
+    val banuLlmKey: String = "",
+    val banuLlmModel: String = "",
+    val banuRateLimitPerMinute: Int = 20,
+    val unabWpUrl: String = ""
 ) {
     val isProduction: Boolean get() = env == "production"
 
-    override fun toString() = "AppConfig(env=$env, port=$port, db=${dbUrl.substringBefore(';')}, tokenTtlDays=$tokenTtlDays)"
+    val banuLlmConfigured: Boolean get() = banuLlmUrl.isNotBlank() && banuLlmKey.isNotBlank() && banuLlmModel.isNotBlank()
+
+    /** Nunca incluye claves ni URLs con credenciales: solo dice qué integraciones están activas. */
+    override fun toString() = "AppConfig(env=$env, port=$port, db=${dbUrl.substringBefore(';')}, tokenTtlDays=$tokenTtlDays, " +
+        "gps=${gpsFeedUrl.isNotBlank()}, webhook=${gpsWebhookSecret.isNotBlank()}, firebase=${firebaseProjectId.isNotBlank()}, " +
+        "banuIa=$banuLlmConfigured, wp=${unabWpUrl.isNotBlank()})"
 
     companion object {
         const val DEFAULT_DB_URL =
@@ -31,7 +46,16 @@ data class AppConfig(
                 dbUrl = get("DB_URL") ?: DEFAULT_DB_URL,
                 dbUser = get("DB_USER") ?: "sa",
                 dbPassword = get("DB_PASSWORD") ?: "",
-                tokenTtlDays = get("TOKEN_TTL_DAYS")?.toLongOrNull()?.coerceIn(1, 365) ?: 30
+                tokenTtlDays = get("TOKEN_TTL_DAYS")?.toLongOrNull()?.coerceIn(1, 365) ?: 30,
+                gpsFeedUrl = get("GPS_FEED_URL") ?: "",
+                gpsWebhookSecret = get("GPS_WEBHOOK_SECRET") ?: "",
+                firebaseProjectId = get("FIREBASE_PROJECT_ID") ?: "",
+                firebaseCredentials = get("FIREBASE_CREDENTIALS") ?: "",
+                banuLlmUrl = get("BANU_LLM_URL") ?: "",
+                banuLlmKey = get("BANU_LLM_KEY") ?: "",
+                banuLlmModel = get("BANU_LLM_MODEL") ?: "",
+                banuRateLimitPerMinute = get("BANU_RATE_LIMIT_PER_MINUTE")?.toIntOrNull()?.coerceIn(1, 10_000) ?: 20,
+                unabWpUrl = get("UNAB_WP_URL") ?: ""
             )
         }
 

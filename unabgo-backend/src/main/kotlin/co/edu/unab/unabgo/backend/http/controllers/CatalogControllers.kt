@@ -9,21 +9,24 @@ import co.edu.unab.unabgo.backend.auth.authorize
 import co.edu.unab.unabgo.backend.database.BusRoutes
 import co.edu.unab.unabgo.backend.database.Programs
 import co.edu.unab.unabgo.backend.database.RouteStops
+import co.edu.unab.unabgo.backend.database.StudyPlans
 import co.edu.unab.unabgo.backend.database.dbQuery
 import co.edu.unab.unabgo.backend.http.NotFoundException
-import co.edu.unab.unabgo.backend.http.NotImplementedYetException
 import co.edu.unab.unabgo.backend.http.ValidationException
 import co.edu.unab.unabgo.backend.http.authUser
 import co.edu.unab.unabgo.backend.http.longParam
 import co.edu.unab.unabgo.backend.http.pageRequest
 import co.edu.unab.unabgo.backend.http.requests.BusRouteRequest
+import co.edu.unab.unabgo.backend.http.resources.BusLiveResource
 import co.edu.unab.unabgo.backend.http.resources.DataResponse
+import co.edu.unab.unabgo.backend.http.resources.RouteSummary
 import co.edu.unab.unabgo.backend.http.resources.toResource
 import co.edu.unab.unabgo.backend.http.validated
 import co.edu.unab.unabgo.backend.models.BusRoute
 import co.edu.unab.unabgo.backend.models.BusStop
 import co.edu.unab.unabgo.backend.models.Program
 import co.edu.unab.unabgo.backend.models.User
+import co.edu.unab.unabgo.backend.services.BusLiveService
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.ApplicationCall
 import io.ktor.server.response.respond
@@ -32,6 +35,8 @@ import org.jetbrains.exposed.sql.Op
 import org.jetbrains.exposed.sql.SizedCollection
 import org.jetbrains.exposed.sql.SortOrder
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq
+import org.jetbrains.exposed.sql.SqlExpressionBuilder.inSubQuery
+import org.jetbrains.exposed.sql.SqlExpressionBuilder.isNotNull
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.lessEq
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.like
 import org.jetbrains.exposed.sql.and
@@ -49,13 +54,13 @@ class HealthController {
         val db = runCatching { dbQuery { Programs.selectAll().limit(1).count() } }.isSuccess
         call.respond(
             if (db) HttpStatusCode.OK else HttpStatusCode.InternalServerError,
-            Health(if (db) "ok" else "error", if (db) "ok" else "sin conexión", "0.2.0")
+            Health(if (db) "ok" else "error", if (db) "ok" else "sin conexión", "0.3.0")
         )
     }
 }
 
 class ProgramController {
-    /** GET /api/v1/programs?faculty=&level=&max_price=&q=&page=&per_page= */
+    /** GET /api/v1/programs?faculty=&level=&has_plan=&max_price=&q=&page=&per_page= (has_plan=true: solo las carreras con plan de estudios). */
     suspend fun index(call: ApplicationCall) {
         val q = call.request.queryParameters
         val page = call.pageRequest()
@@ -66,6 +71,9 @@ class ProgramController {
             q["level"]?.takeIf { it.isNotBlank() }?.let { filter = filter and (Programs.level eq it) }
             q["q"]?.takeIf { it.isNotBlank() }?.let { filter = filter and (Programs.name.lowerCase() like "%${it.lowercase()}%") }
             maxPrice?.let { filter = filter and (Programs.priceCop lessEq it) }
+            if (q["has_plan"] == "true") {
+                filter = filter and (Programs.id inSubQuery StudyPlans.select(StudyPlans.program).where { StudyPlans.program.isNotNull() })
+            }
             val query = Program.find(filter)
             val total = query.count()
             val items = query.orderBy(Programs.name to SortOrder.ASC).limit(page.perPage).offset(page.offset).map { it.toResource() }
@@ -82,16 +90,39 @@ class ProgramController {
     }
 }
 
-class BusController {
+class BusController(private val liveService: BusLiveService) {
     /** GET /api/v1/bus/routes: rutas con sus paradas en orden. */
     suspend fun routes(call: ApplicationCall) {
         val body = dbQuery { BusRoute.all().orderBy(BusRoutes.code to SortOrder.ASC).map { it.toResource() } }
         call.respond(DataResponse(body))
     }
 
-    /** GET /api/v1/bus/live: posiciones en vivo desde la plataforma GPS (entrega 3). */
+    /** GET /api/v1/bus/live: posiciones en vivo (plataforma GPS o webhook); 503 si no hay datos confiables. */
     suspend fun live(call: ApplicationCall) {
-        throw NotImplementedYetException("La integración con la plataforma GPS de las Rutas UNAB llega en la entrega 3.")
+        val positions = liveService.live()
+        val body = dbQuery {
+            val routes = BusRoute.all().toList()
+            val byCode = routes.associateBy { it.code }
+            val byDevice = routes.filter { it.gpsDeviceId != null }.associateBy { it.gpsDeviceId }
+            positions.map { p ->
+                val route = p.routeCode?.let(byCode::get) ?: byDevice[p.deviceId]
+                BusLiveResource(
+                    deviceId = p.deviceId,
+                    plate = p.plate,
+                    route = route?.let { RouteSummary(it.id.value, it.code, it.name, it.color) },
+                    lat = p.lat,
+                    lng = p.lng,
+                    state = p.state.name,
+                    speedKmh = p.speedKmh,
+                    headingDeg = p.headingDeg,
+                    heading = p.headingDeg?.let(BusLiveService::compass),
+                    reportedAt = p.reportedAt.toString(),
+                    ageSeconds = p.ageSeconds,
+                    source = p.source
+                )
+            }
+        }
+        call.respond(DataResponse(body))
     }
 
     /** PUT /api/v1/bus/routes/{id}: nombre, color, estado y orden de las paradas (gestor o administrador). */

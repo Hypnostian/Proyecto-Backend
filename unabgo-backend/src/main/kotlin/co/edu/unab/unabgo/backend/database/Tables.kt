@@ -139,3 +139,41 @@ object Faqs : LongIdTable("faqs") {
     val active = bool("active").default(true)
     val updatedAt = timestamp("updated_at")
 }
+
+object Professors : LongIdTable("professors") {
+    val slug = varchar("slug", 160)
+    val name = varchar("name", 160)
+    val title = varchar("title", 500).nullable()
+    val unit = varchar("unit", 200).nullable()
+    val unitUrl = varchar("unit_url", 300).nullable()
+    val apoloUrl = varchar("apolo_url", 300)
+    val cvlacUrl = varchar("cvlac_url", 300).nullable()
+}
+
+object StudyPlans : LongIdTable("study_plans") {
+    val slug = varchar("slug", 160)
+    val programName = varchar("program_name", 200)
+    val searchName = varchar("search_name", 220)
+    val level = varchar("level", 40).nullable()
+    val structure = varchar("structure", 20)
+    val totalCredits = integer("total_credits").nullable()
+    val planUrl = varchar("plan_url", 1000)
+    val sourceUrl = varchar("source_url", 300)
+    val program = optReference("program_id", Programs, onDelete = ReferenceOption.SET_NULL)
+    val planText = text("plan_text").nullable()
+    val updatedAt = timestamp("updated_at")
+}
+
+object PlanSemesters : LongIdTable("plan_semesters") {
+    val plan = reference("plan_id", StudyPlans, onDelete = ReferenceOption.CASCADE)
+    val number = short("number")
+    val name = varchar("name", 80)
+    val credits = integer("credits").nullable()
+}
+
+object PlanCourses : LongIdTable("plan_courses") {
+    val semester = reference("semester_id", PlanSemesters, onDelete = ReferenceOption.CASCADE)
+    val name = varchar("name", 200)
+    val credits = integer("credits").nullable()
+    val sortOrder = short("sort_order").default(0)
+}

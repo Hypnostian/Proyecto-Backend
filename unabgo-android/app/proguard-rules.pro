@@ -1,0 +1,8 @@
+-keepattributes *Annotation*, InnerClasses
+-dontnote kotlinx.serialization.**
+-keepclassmembers class co.edu.unab.unabgo.cliente.data.api.** { *** Companion; }
+-keepclasseswithmembers class co.edu.unab.unabgo.cliente.data.api.** { kotlinx.serialization.KSerializer serializer(...); }
+-dontwarn okhttp3.internal.platform.**
+-dontwarn org.conscrypt.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.openjsse.**

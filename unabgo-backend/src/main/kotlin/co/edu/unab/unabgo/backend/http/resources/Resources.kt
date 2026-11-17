@@ -11,9 +11,12 @@ import co.edu.unab.unabgo.backend.models.BusStop
 import co.edu.unab.unabgo.backend.models.Faq
 import co.edu.unab.unabgo.backend.models.GradeCategory
 import co.edu.unab.unabgo.backend.models.GradeItem
+import co.edu.unab.unabgo.backend.models.PlanSemester
+import co.edu.unab.unabgo.backend.models.Professor
 import co.edu.unab.unabgo.backend.models.Program
 import co.edu.unab.unabgo.backend.models.ScheduleBlock
 import co.edu.unab.unabgo.backend.models.StudentProfile
+import co.edu.unab.unabgo.backend.models.StudyPlan
 import co.edu.unab.unabgo.backend.models.Subject
 import co.edu.unab.unabgo.backend.models.User
 import kotlinx.serialization.Serializable
@@ -50,7 +53,7 @@ data class ProfileResource(
 )
 
 @Serializable
-data class ProgramSummary(val id: Long, val name: String, val faculty: String)
+data class ProgramSummary(val id: Long, val name: String, val faculty: String, val level: String? = null, val studyPlanSlug: String? = null)
 
 @Serializable
 data class TokenResource(val token: String, val tokenType: String = "Bearer", val expiresAt: String, val user: UserResource)
@@ -66,7 +69,8 @@ data class ProgramResource(
     val priceCop: Long?,
     val snies: String?,
     val url: String,
-    val verifiedAt: String?
+    val verifiedAt: String?,
+    val studyPlanSlug: String? = null
 )
 
 @Serializable
@@ -87,6 +91,23 @@ data class SubjectResource(
     val color: String,
     val blocks: List<ScheduleBlockResource>,
     val categories: List<GradeCategoryResource>? = null
+)
+
+/** Próxima clase del estudiante: el bloque, su materia y cuánto falta (0 si ya empezó). */
+@Serializable
+data class NextClassResource(
+    val subjectId: Long,
+    val subjectName: String,
+    val color: String,
+    val teacher: String?,
+    val blockId: Long,
+    val date: String,
+    val dayOfWeek: Int,
+    val startTime: String,
+    val endTime: String,
+    val room: String?,
+    val inProgress: Boolean,
+    val startsInMinutes: Long
 )
 
 @Serializable
@@ -127,11 +148,12 @@ fun StudentProfile.toResource() = ProfileResource(
     semester = semester?.toInt(),
     language = language,
     reminderMinutes = reminderMinutes.toInt(),
-    program = program?.let { ProgramSummary(it.id.value, it.name, it.faculty) }
+    program = program?.let { ProgramSummary(it.id.value, it.name, it.faculty, it.level, it.studyPlans.firstOrNull()?.slug) }
 )
 
 fun Program.toResource() = ProgramResource(
-    id.value, slug, name, faculty, level, modality, priceCop, snies, url, verifiedAt?.toString()
+    id.value, slug, name, faculty, level, modality, priceCop, snies, url, verifiedAt?.toString(),
+    studyPlanSlug = studyPlans.firstOrNull()?.slug
 )
 
 fun ScheduleBlock.toResource() = ScheduleBlockResource(id.value, dayOfWeek.toInt(), startTime.toString(), endTime.toString(), room)
@@ -168,3 +190,83 @@ fun Announcement.toResource() = AnnouncementResource(
 )
 
 fun Faq.toResource() = FaqResource(id.value, question, keywords, answer, sourceUrl, active)
+
+@Serializable
+data class ProfessorResource(
+    val id: Long,
+    val slug: String,
+    val name: String,
+    val title: String?,
+    val unit: String?,
+    val unitUrl: String?,
+    val apoloUrl: String,
+    val cvlacUrl: String?
+)
+
+fun Professor.toResource() = ProfessorResource(id.value, slug, name, title, unit, unitUrl, apoloUrl, cvlacUrl)
+
+@Serializable
+data class StudyPlanSummary(
+    val slug: String,
+    val programName: String,
+    val level: String?,
+    val structure: String,
+    val totalCredits: Int?,
+    val semestersCount: Int,
+    val planUrl: String
+)
+
+@Serializable
+data class PlanProgramResource(val id: Long, val name: String, val slug: String)
+
+@Serializable
+data class PlanCourseResource(val name: String, val credits: Int?)
+
+@Serializable
+data class PlanSemesterResource(val number: Int, val name: String, val credits: Int?, val courses: List<PlanCourseResource>)
+
+@Serializable
+data class StudyPlanResource(
+    val slug: String,
+    val programName: String,
+    val level: String?,
+    val structure: String,
+    val totalCredits: Int?,
+    val planUrl: String,
+    val sourceUrl: String,
+    val program: PlanProgramResource?,
+    val semesters: List<PlanSemesterResource>,
+    val text: String?
+)
+
+fun PlanSemester.toResource() = PlanSemesterResource(
+    number.toInt(), name, credits, courses.sortedBy { it.sortOrder }.map { PlanCourseResource(it.name, it.credits) }
+)
+
+fun StudyPlan.toResource() = StudyPlanResource(
+    slug, programName, level, structure, totalCredits, planUrl, sourceUrl,
+    program?.let { PlanProgramResource(it.id.value, it.name, it.slug) },
+    semesters.sortedBy { it.number }.map { it.toResource() }, planText
+)
+
+fun StudyPlan.toSummary() = StudyPlanSummary(slug, programName, level, structure, totalCredits, semesters.count().toInt(), planUrl)
+
+@Serializable
+data class RouteSummary(val id: Long, val code: String, val name: String, val color: String)
+
+/** Un bus en el mapa: ruta, posición, estado (MOVING, STOPPED o PARKED), rumbo y antigüedad del reporte. */
+@Serializable
+data class BusLiveResource(
+    val deviceId: String,
+    val plate: String,
+    val route: RouteSummary?,
+    val lat: Double,
+    val lng: Double,
+    val state: String,
+    val speedKmh: Double?,
+    val headingDeg: Double?,
+    val heading: String?,
+    val reportedAt: String,
+    val ageSeconds: Long,
+    val source: String
+)

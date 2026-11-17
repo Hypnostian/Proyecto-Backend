@@ -2,8 +2,10 @@ package co.edu.unab.unabgo.backend.http.controllers
 
 // Avisos de las dependencias, preguntas frecuentes de Banu y administración de usuarios.
 
+import co.edu.unab.unabgo.backend.auth.Ability
 import co.edu.unab.unabgo.backend.auth.AnnouncementPolicy
 import co.edu.unab.unabgo.backend.auth.FaqPolicy
+import co.edu.unab.unabgo.backend.auth.Gate
 import co.edu.unab.unabgo.backend.auth.UserPolicy
 import co.edu.unab.unabgo.backend.auth.UserRole
 import co.edu.unab.unabgo.backend.auth.authorize
@@ -12,7 +14,7 @@ import co.edu.unab.unabgo.backend.database.Faqs
 import co.edu.unab.unabgo.backend.database.Users
 import co.edu.unab.unabgo.backend.database.dbQuery
 import co.edu.unab.unabgo.backend.http.NotFoundException
-import co.edu.unab.unabgo.backend.http.NotImplementedYetException
+import co.edu.unab.unabgo.backend.http.ServiceUnavailableException
 import co.edu.unab.unabgo.backend.http.ValidationException
 import co.edu.unab.unabgo.backend.http.authUser
 import co.edu.unab.unabgo.backend.http.longParam
@@ -28,6 +30,8 @@ import co.edu.unab.unabgo.backend.models.Faq
 import co.edu.unab.unabgo.backend.models.Role
 import co.edu.unab.unabgo.backend.models.User
 import co.edu.unab.unabgo.backend.services.AnnouncementService
+import co.edu.unab.unabgo.backend.services.ProgramSyncService
+import co.edu.unab.unabgo.backend.services.integrations.UnabWebService
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.ApplicationCall
 import io.ktor.server.response.respond
@@ -171,7 +175,7 @@ class FaqController {
     }
 }
 
-class AdminUserController {
+class AdminUserController(private val unabWeb: UnabWebService? = null, private val programSync: ProgramSyncService = ProgramSyncService()) {
 
     /** GET /api/v1/admin/users?role=&page= */
     suspend fun index(call: ApplicationCall) {
@@ -205,10 +209,13 @@ class AdminUserController {
         call.respond(DataResponse(body))
     }
 
-    /** POST /api/v1/admin/programs/sync (entrega 3: sincroniza desde la API de WordPress de unab.edu.co) */
+    /** POST /api/v1/admin/programs/sync: crea y actualiza programas desde la API de WordPress de unab.edu.co. */
     suspend fun syncPrograms(call: ApplicationCall) {
         val user = call.authUser()
-        authorize(UserPolicy.viewAny(user), "Solo el administrador sincroniza los programas.")
-        throw NotImplementedYetException("La sincronización con unab.edu.co llega en la entrega 3.")
+        Gate.authorize(user, Ability.SYNC_PROGRAMS)
+        val web = unabWeb ?: throw ServiceUnavailableException("La sincronización no está configurada (falta UNAB_WP_URL).")
+        val remote = web.fetchPrograms()
+        val result = dbQuery { programSync.sync(remote) }
+        call.respond(DataResponse(result))
     }
 }

@@ -11,6 +11,8 @@ import co.edu.unab.unabgo.backend.http.longParam
 import co.edu.unab.unabgo.backend.http.requests.GradeCategoryRequest
 import co.edu.unab.unabgo.backend.http.requests.GradeItemRequest
 import co.edu.unab.unabgo.backend.http.requests.SubjectRequest
+import co.edu.unab.unabgo.backend.http.requests.NextClassQuery
+import co.edu.unab.unabgo.backend.http.validate
 import co.edu.unab.unabgo.backend.http.resources.DataResponse
 import co.edu.unab.unabgo.backend.http.resources.toResource
 import co.edu.unab.unabgo.backend.http.validated
@@ -153,6 +155,25 @@ class SubjectController {
             authorize(SubjectPolicy.view(user, subject))
             GradeService.summaryOf(subject)
         }
+        call.respond(DataResponse(body))
+    }
+}
+
+/** Horario del estudiante: próxima clase calculada con los bloques de sus materias. */
+class ScheduleController(private val clock: java.time.Clock = java.time.Clock.systemUTC()) {
+
+    /**
+     * GET /api/v1/schedule/next[?at=AAAA-MM-DDTHH:mm]  ->  200 con la próxima clase, o { "data": null } si no
+     * tiene clases en el horario. "at" fija la hora local de Bucaramanga (por defecto, el momento actual).
+     */
+    suspend fun next(call: ApplicationCall) {
+        val user = call.authUser()
+        authorize(SubjectPolicy.viewAny(user), "Solo los estudiantes tienen horario de clases.")
+        val query = NextClassQuery(call.request.queryParameters["at"])
+        query.validate()
+        val now = query.at?.let(NextClassQuery::parseLocalDateTime)
+            ?: java.time.LocalDateTime.now(clock.withZone(ScheduleService.CAMPUS_ZONE)).truncatedTo(ChronoUnit.MINUTES)
+        val body = dbQuery { ScheduleService.nextClass(User[user.id], now) }
         call.respond(DataResponse(body))
     }
 }

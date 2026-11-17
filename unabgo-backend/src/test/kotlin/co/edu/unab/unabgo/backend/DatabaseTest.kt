@@ -23,6 +23,10 @@ class DatabaseTest {
             assertEquals(15, counts["users"])
             assertEquals(228, counts["programs"])
             assertEquals(58, counts["faqs"])
+            assertTrue(counts.containsKey("professors"), "la tabla professors existe (V6); se llena si seed/professors.json está")
+            listOf("study_plans", "plan_semesters", "plan_courses").forEach {
+                assertTrue(counts[it]!! > 0, "la tabla $it (V7) se llena con seed/study_plans.json")
+            }
             listOf("student_profiles", "subjects", "schedule_blocks", "grade_categories", "grade_items",
                 "bus_routes", "bus_stops", "route_stops", "favorite_routes", "announcements").forEach {
                 assertTrue(counts[it]!! > 0, "la tabla $it quedó vacía")

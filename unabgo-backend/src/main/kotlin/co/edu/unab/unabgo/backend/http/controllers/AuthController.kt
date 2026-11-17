@@ -5,7 +5,10 @@ import co.edu.unab.unabgo.backend.auth.Gate
 import co.edu.unab.unabgo.backend.auth.TokenService
 import co.edu.unab.unabgo.backend.database.dbQuery
 import co.edu.unab.unabgo.backend.http.NotFoundException
+import co.edu.unab.unabgo.backend.http.ServiceUnavailableException
+import co.edu.unab.unabgo.backend.http.UnauthorizedException
 import co.edu.unab.unabgo.backend.http.authUser
+import co.edu.unab.unabgo.backend.http.requests.GoogleLoginRequest
 import co.edu.unab.unabgo.backend.http.requests.LoginRequest
 import co.edu.unab.unabgo.backend.http.requests.RegisterRequest
 import co.edu.unab.unabgo.backend.http.requests.UpdateProfileRequest
@@ -17,12 +20,14 @@ import co.edu.unab.unabgo.backend.models.Program
 import co.edu.unab.unabgo.backend.models.StudentProfile
 import co.edu.unab.unabgo.backend.models.User
 import co.edu.unab.unabgo.backend.services.AuthService
+import co.edu.unab.unabgo.backend.services.integrations.GoogleTokenVerifier
+import co.edu.unab.unabgo.backend.services.integrations.InvalidIdTokenException
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.ApplicationCall
 import io.ktor.server.response.respond
 
 /** Registro, inicio y cierre de sesión con tokens, y perfil del usuario autenticado. */
-class AuthController(private val tokens: TokenService) {
+class AuthController(private val tokens: TokenService, private val googleVerifier: GoogleTokenVerifier? = null) {
 
     private val auth = AuthService(tokens)
 
@@ -34,6 +39,26 @@ class AuthController(private val tokens: TokenService) {
             TokenResource(token.plainText, expiresAt = token.expiresAt.toString(), user = user.toResource())
         }
         call.respond(HttpStatusCode.Created, DataResponse(body))
+    }
+
+    /**
+     * POST /api/v1/auth/google {"id_token"}  ->  200 con el token de la app. Verifica el ID token de Firebase y
+     * solo acepta correos @unab.edu.co (403 si es otro dominio, 401 si el token no es válido, 503 si no está configurado).
+     */
+    suspend fun google(call: ApplicationCall) {
+        val request = call.validated<GoogleLoginRequest>()
+        val verifier = googleVerifier
+            ?: throw ServiceUnavailableException("El inicio de sesión con Google no está configurado (falta FIREBASE_PROJECT_ID).")
+        val identity = try {
+            verifier.verify(request.idToken!!)
+        } catch (e: InvalidIdTokenException) {
+            throw UnauthorizedException("El token de Google no es válido: ${e.message}")
+        }
+        val body = dbQuery {
+            val (user, token) = auth.loginWithGoogle(identity, request.deviceName)
+            TokenResource(token.plainText, expiresAt = token.expiresAt.toString(), user = user.toResource())
+        }
+        call.respond(DataResponse(body))
     }
 
     /** POST /api/v1/auth/login  ->  200 OK con el token, o 401 si las credenciales no son válidas. */

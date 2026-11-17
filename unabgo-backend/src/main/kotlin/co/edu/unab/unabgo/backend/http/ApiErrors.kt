@@ -3,6 +3,7 @@ package co.edu.unab.unabgo.backend.http
 // Errores de la API con su código HTTP y un cuerpo JSON uniforme:
 // { "error": "mensaje", "code": "CODIGO", "fields": { "campo": "mensaje" } }
 
+import co.edu.unab.unabgo.backend.services.integrations.ExternalServiceException
 import io.ktor.http.HttpStatusCode
 import io.ktor.server.application.Application
 import io.ktor.server.application.install
@@ -31,7 +32,11 @@ class NotFoundException(resource: String) : ApiException(HttpStatusCode.NotFound
 
 class ConflictException(message: String) : ApiException(HttpStatusCode.Conflict, "CONFLICT", message)
 
-class NotImplementedYetException(message: String) : ApiException(HttpStatusCode.NotImplemented, "NOT_IMPLEMENTED", message)
+/** 429: demasiadas solicitudes desde la misma IP. */
+class TooManyRequestsException(message: String) : ApiException(HttpStatusCode.TooManyRequests, "TOO_MANY_REQUESTS", message)
+
+/** 503: un servicio externo no está configurado o no responde. */
+class ServiceUnavailableException(message: String) : ApiException(HttpStatusCode.ServiceUnavailable, "SERVICE_UNAVAILABLE", message)
 
 @Serializable
 data class ErrorBody(val error: String, val code: String, val fields: Map<String, String>? = null)
@@ -40,6 +45,10 @@ fun Application.installErrorHandling() {
     install(StatusPages) {
         exception<ApiException> { call, e ->
             call.respond(e.status, ErrorBody(e.message, e.code, e.fields))
+        }
+        exception<ExternalServiceException> { call, e ->
+            call.application.log.warn("Servicio externo caído: {}", e.message)
+            call.respond(HttpStatusCode.ServiceUnavailable, ErrorBody("Un servicio externo no responde: ${e.message}", "SERVICE_UNAVAILABLE"))
         }
         exception<BadRequestException> { call, _ ->
             call.respond(HttpStatusCode.BadRequest, ErrorBody("La petición no es válida: revisa el JSON y los encabezados.", "BAD_REQUEST"))

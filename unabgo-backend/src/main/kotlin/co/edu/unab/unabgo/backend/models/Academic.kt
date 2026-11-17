@@ -4,9 +4,13 @@ package co.edu.unab.unabgo.backend.models
 
 import co.edu.unab.unabgo.backend.database.GradeCategories
 import co.edu.unab.unabgo.backend.database.GradeItems
+import co.edu.unab.unabgo.backend.database.PlanCourses
+import co.edu.unab.unabgo.backend.database.PlanSemesters
+import co.edu.unab.unabgo.backend.database.Professors
 import co.edu.unab.unabgo.backend.database.Programs
 import co.edu.unab.unabgo.backend.database.ScheduleBlocks
 import co.edu.unab.unabgo.backend.database.StudentProfiles
+import co.edu.unab.unabgo.backend.database.StudyPlans
 import co.edu.unab.unabgo.backend.database.Subjects
 import org.jetbrains.exposed.dao.LongEntity
 import org.jetbrains.exposed.dao.LongEntityClass
@@ -27,6 +31,9 @@ class Program(id: EntityID<Long>) : LongEntity(id) {
 
     /** 1:N — estudiantes que cursan el programa. */
     val students by StudentProfile optionalReferrersOn StudentProfiles.program
+
+    /** 1:N — planes de estudio vinculados (normalmente uno). */
+    val studyPlans by StudyPlan optionalReferrersOn StudyPlans.program
 }
 
 class Subject(id: EntityID<Long>) : LongEntity(id) {
@@ -74,4 +81,60 @@ class GradeItem(id: EntityID<Long>) : LongEntity(id) {
     var score by GradeItems.score
     var weight by GradeItems.weight
     var gradedAt by GradeItems.gradedAt
+}
+
+/** Profesor con sus datos públicos de APOLO (portal de investigación de la UNAB). */
+class Professor(id: EntityID<Long>) : LongEntity(id) {
+    companion object : LongEntityClass<Professor>(Professors)
+
+    var slug by Professors.slug
+    var name by Professors.name
+    var title by Professors.title
+    var unit by Professors.unit
+    var unitUrl by Professors.unitUrl
+    var apoloUrl by Professors.apoloUrl
+    var cvlacUrl by Professors.cvlacUrl
+}
+
+/** Plan de estudios de un programa: 1:N semestres (que a su vez tienen 1:N cursos) y N:1 programa. */
+class StudyPlan(id: EntityID<Long>) : LongEntity(id) {
+    companion object : LongEntityClass<StudyPlan>(StudyPlans) {
+        /** Texto para buscar: minúsculas, sin tildes y con cualquier signo convertido en un espacio. */
+        fun normalize(text: String): String = java.text.Normalizer.normalize(text.lowercase(), java.text.Normalizer.Form.NFD)
+            .replace("\\p{M}+".toRegex(), "").replace("[^a-z0-9ñ]+".toRegex(), " ").trim()
+    }
+
+    var slug by StudyPlans.slug
+    var programName by StudyPlans.programName
+    var searchName by StudyPlans.searchName
+    var level by StudyPlans.level
+    var structure by StudyPlans.structure
+    var totalCredits by StudyPlans.totalCredits
+    var planUrl by StudyPlans.planUrl
+    var sourceUrl by StudyPlans.sourceUrl
+    var program by Program optionalReferencedOn StudyPlans.program
+    var planText by StudyPlans.planText
+    var updatedAt by StudyPlans.updatedAt
+
+    val semesters by PlanSemester referrersOn PlanSemesters.plan
+}
+
+class PlanSemester(id: EntityID<Long>) : LongEntity(id) {
+    companion object : LongEntityClass<PlanSemester>(PlanSemesters)
+
+    var plan by StudyPlan referencedOn PlanSemesters.plan
+    var number by PlanSemesters.number
+    var name by PlanSemesters.name
+    var credits by PlanSemesters.credits
+
+    val courses by PlanCourse referrersOn PlanCourses.semester
+}
+
+class PlanCourse(id: EntityID<Long>) : LongEntity(id) {
+    companion object : LongEntityClass<PlanCourse>(PlanCourses)
+
+    var semester by PlanSemester referencedOn PlanCourses.semester
+    var name by PlanCourses.name
+    var credits by PlanCourses.credits
+    var sortOrder by PlanCourses.sortOrder
 }

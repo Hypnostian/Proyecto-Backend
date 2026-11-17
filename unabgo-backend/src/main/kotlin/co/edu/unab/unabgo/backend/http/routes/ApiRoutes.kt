@@ -3,14 +3,18 @@ package co.edu.unab.unabgo.backend.http.routes
 // Rutas de la API (equivalente a routes/api.php). Las públicas no piden token; las demás están dentro
 // de authenticate(AUTH_API), y cada controlador aplica el Gate o la Policy que corresponde.
 
-import co.edu.unab.unabgo.backend.http.NotImplementedYetException
 import co.edu.unab.unabgo.backend.http.controllers.AdminUserController
 import co.edu.unab.unabgo.backend.http.controllers.AnnouncementController
 import co.edu.unab.unabgo.backend.http.controllers.AuthController
 import co.edu.unab.unabgo.backend.http.controllers.BusController
+import co.edu.unab.unabgo.backend.http.controllers.BanuController
 import co.edu.unab.unabgo.backend.http.controllers.FaqController
+import co.edu.unab.unabgo.backend.http.controllers.GpsWebhookController
 import co.edu.unab.unabgo.backend.http.controllers.HealthController
+import co.edu.unab.unabgo.backend.http.controllers.ProfessorController
 import co.edu.unab.unabgo.backend.http.controllers.ProgramController
+import co.edu.unab.unabgo.backend.http.controllers.ScheduleController
+import co.edu.unab.unabgo.backend.http.controllers.StudyPlanController
 import co.edu.unab.unabgo.backend.http.controllers.SubjectController
 import io.ktor.server.auth.authenticate
 import io.ktor.server.routing.Route
@@ -27,11 +31,16 @@ class Controllers(
     val health: HealthController,
     val auth: AuthController,
     val subjects: SubjectController,
+    val schedule: ScheduleController,
     val programs: ProgramController,
     val bus: BusController,
     val announcements: AnnouncementController,
     val faqs: FaqController,
-    val admin: AdminUserController
+    val admin: AdminUserController,
+    val banu: BanuController,
+    val webhooks: GpsWebhookController,
+    val professors: ProfessorController,
+    val studyPlans: StudyPlanController
 )
 
 fun Route.apiRoutes(c: Controllers) = route("/api/v1") {
@@ -41,15 +50,19 @@ fun Route.apiRoutes(c: Controllers) = route("/api/v1") {
     route("/auth") {
         post("/register") { c.auth.register(call) }
         post("/login") { c.auth.login(call) }
-        post("/google") { throw NotImplementedYetException("El inicio de sesión con Google institucional llega en la entrega 3.") }
+        post("/google") { c.auth.google(call) }
     }
     get("/programs") { c.programs.index(call) }
     get("/programs/{slug}") { c.programs.show(call) }
     get("/bus/routes") { c.bus.routes(call) }
     get("/bus/live") { c.bus.live(call) }
     get("/announcements") { c.announcements.index(call) }
-    post("/banu/ask") { throw NotImplementedYetException("Banu (preguntas frecuentes e IA) llega en la entrega 3.") }
-    post("/webhooks/gps") { throw NotImplementedYetException("El webhook del GPS (firma HMAC) llega en la entrega 3.") }
+    get("/professors") { c.professors.index(call) }
+    get("/professors/{slug}") { c.professors.show(call) }
+    get("/study-plans") { c.studyPlans.index(call) }
+    get("/study-plans/{slug}") { c.studyPlans.show(call) }
+    post("/banu/ask") { c.banu.ask(call) }
+    post("/webhooks/gps") { c.webhooks.receive(call) }
 
     // ------------------------------------------------------------ con token (Bearer)
     authenticate(AUTH_API) {
@@ -73,6 +86,7 @@ fun Route.apiRoutes(c: Controllers) = route("/api/v1") {
             post("/{id}/categories") { c.subjects.storeCategory(call) }
             get("/{id}/summary") { c.subjects.summary(call) }
         }
+        get("/schedule/next") { c.schedule.next(call) }
         post("/categories/{id}/items") { c.subjects.storeItem(call) }
 
         // Gestor o administrador (AnnouncementPolicy, FaqPolicy, BusRoutePolicy)
